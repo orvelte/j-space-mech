@@ -1,0 +1,22 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 580.17it/s]
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:  15%|█▍        | 127/851 [00:00<00:00, 1179.44it/s]Loading weights:  29%|██▉       | 245/851 [00:00<00:00, 700.10it/s] Loading weights:  38%|███▊      | 326/851 [00:00<00:00, 680.09it/s]Loading weights:  47%|████▋     | 400/851 [00:00<00:00, 605.63it/s]Loading weights:  55%|█████▍    | 464/851 [00:00<00:00, 580.64it/s]Loading weights:  62%|██████▏   | 526/851 [00:00<00:00, 590.87it/s]Loading weights:  70%|███████   | 599/851 [00:00<00:00, 618.32it/s]Loading weights:  78%|███████▊  | 663/851 [00:01<00:00, 559.34it/s]Loading weights:  86%|████████▋ | 734/851 [00:01<00:00, 598.94it/s]Loading weights:  94%|█████████▎| 796/851 [00:01<00:00, 575.85it/s]Loading weights: 100%|██████████| 851/851 [00:01<00:00, 622.03it/s]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 112.15it/s]
+
+=== language  l*=24  30 passages, 42 candidates  (gdn/24 among them: True)
+  [free] run 1/18: |S|=3 search 82% / all 85% OK
+  [free] run 2/18: |S|=2 search 75% / all 68% --
+  [free] run 3/18: |S|=2 search 81% / all 85% OK
+  [free] run 4/18: |S|=2 search 81% / all 85% OK
+  [free] run 5/18: |S|=3 search 73% / all 81% OK
+  [free] run 6/18: |S|=3 search 80% / all 67% --
+  [free] run 7/18: |S|=3 search 82% / all 85% OK
+  [free] run 8/18: |S|=3 search 75% / all 78% OK
+  [free] run 9/18: |S|=3 search 79% / all 94% OK
+  [free] run 10/18: |S|=4 search 95% / all 111% OK
+  [free] run 11/18: |S|=3 search 73% / all 81% OK
+  [free] run 12/18: |S|=2 search 81% / all 85% OK
+  [free] run 13/18: |S|=3 search 79% / all 94% OK
+  [free] run 14/18: |S|=2 search 85% / all 76% OK
+  [free] run 15/18: |S|=3 search 82% / all 85% OK
+  [free] run 16/18: |S|=2 search 81% / all 85% OK

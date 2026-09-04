@@ -1,0 +1,88 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 1012.32it/s]
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:  10%|▉         | 84/851 [00:00<00:00, 819.77it/s]Loading weights:  20%|█▉        | 166/851 [00:00<00:01, 669.11it/s]Loading weights:  28%|██▊       | 235/851 [00:00<00:01, 604.81it/s]Loading weights:  35%|███▍      | 297/851 [00:00<00:01, 545.86it/s]Loading weights:  41%|████▏     | 353/851 [00:00<00:01, 489.93it/s]Loading weights:  49%|████▉     | 416/851 [00:00<00:00, 528.84it/s]Loading weights:  55%|█████▌    | 471/851 [00:00<00:00, 531.08it/s]Loading weights:  64%|██████▍   | 543/851 [00:00<00:00, 569.52it/s]Loading weights:  71%|███████▏  | 607/851 [00:01<00:00, 560.09it/s]Loading weights:  78%|███████▊  | 665/851 [00:01<00:00, 536.22it/s]Loading weights:  85%|████████▌ | 725/851 [00:01<00:00, 551.90it/s]Loading weights:  92%|█████████▏| 781/851 [00:01<00:00, 533.70it/s]Loading weights: 100%|██████████| 851/851 [00:01<00:00, 573.80it/s]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 101.23it/s]
+{
+ "variant": "27b",
+ "lens": {
+  "n_prompts": 1000,
+  "d_model": 5120,
+  "n_source_layers": 63,
+  "source_layers": [
+   0,
+   62
+  ]
+ },
+ "arch": {
+  "n_layers": 64,
+  "n_heads": 24,
+  "head_dim": 256,
+  "full_attn_layers": [
+   3,
+   7,
+   11,
+   15,
+   19,
+   23,
+   27,
+   31,
+   35,
+   39,
+   43,
+   47,
+   51,
+   55,
+   59,
+   63
+  ],
+  "n_gdn": 48
+ }
+}
+/root/j-space-mech/scripts/e0_lens_sanity.py:57: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  "metric": float(m),
+E0.0 {"metric": 9.299427032470703, "grad_norm_at_layer0": 12.625, "grad_finite": true, "gdn_layers_traversed": 24, "pass": true}
+E0.1a {
+ "boot_pos": {
+  "position": -2,
+  "targets": [
+   "italy",
+   "italia",
+   "\u610f\u5927\u5229"
+  ],
+  "jlens_first_layer": 23,
+  "logit_lens_first_layer": 39,
+  "jlens_precedes_logit_lens": true
+ },
+ "final_pos": {
+  "position": -1,
+  "targets": [
+   "euro",
+   "lira",
+   "lire"
+  ],
+  "jlens_first_layer": 54,
+  "logit_lens_first_layer": 54,
+  "jlens_precedes_logit_lens": false
+ }
+}
+E0.1a pass: True
+E0.1b {
+ "layer": 62,
+ "per_snippet_overlap": [
+  0.8,
+  0.6,
+  0.8,
+  0.6,
+  0.4,
+  0.6,
+  0.6,
+  0.8,
+  0.4,
+  0.6
+ ],
+ "mean_overlap": 0.62,
+ "pass_60pct": true,
+ "K0_fires_below_40pct": false
+}
+wrote results/e0_lens_sanity_27b.json

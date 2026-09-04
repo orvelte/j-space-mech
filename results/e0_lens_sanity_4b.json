@@ -1,0 +1,968 @@
+{
+ "variant": "4b",
+ "lens": {
+  "n_prompts": 1000,
+  "d_model": 2560,
+  "n_source_layers": 31,
+  "source_layers": [
+   0,
+   30
+  ]
+ },
+ "arch": {
+  "n_layers": 32,
+  "n_heads": 16,
+  "head_dim": 256,
+  "full_attn_layers": [
+   3,
+   7,
+   11,
+   15,
+   19,
+   23,
+   27,
+   31
+  ],
+  "n_gdn": 24
+ },
+ "E0.0": {
+  "metric": 1.5305266380310059,
+  "grad_norm_at_layer0": 6.15625,
+  "grad_finite": true,
+  "gdn_layers_traversed": 12,
+  "pass": true
+ },
+ "E0.1a": {
+  "boot_pos": {
+   "position": -2,
+   "targets": [
+    "italy",
+    "italia",
+    "\u610f\u5927\u5229"
+   ],
+   "jlens_first_layer": 9,
+   "logit_lens_first_layer": null,
+   "jlens_precedes_logit_lens": true,
+   "jlens_top5": {
+    "0": [
+     " --",
+     " ``",
+     " *",
+     "ting",
+     " -->"
+    ],
+    "1": [
+     " ``",
+     " --",
+     " -->",
+     " \ufffd",
+     " `"
+    ],
+    "2": [
+     " `",
+     " *",
+     "ting",
+     " \ufffd",
+     "ing"
+    ],
+    "3": [
+     " --",
+     " `",
+     " *",
+     " \ufffd",
+     " \n"
+    ],
+    "4": [
+     " `",
+     " --",
+     "ing",
+     " \ufffd",
+     "ting"
+    ],
+    "5": [
+     " `",
+     " --",
+     " \ufffd",
+     " *",
+     "ing"
+    ],
+    "6": [
+     " `",
+     " --",
+     "ing",
+     " boots",
+     "iness"
+    ],
+    "7": [
+     " `",
+     " *",
+     " boots",
+     "iness",
+     "ing"
+    ],
+    "8": [
+     " `",
+     " boots",
+     " *",
+     " `\\",
+     " heel"
+    ],
+    "9": [
+     " `",
+     " italian",
+     " Italy",
+     "\u610f\u5927\u5229",
+     "`"
+    ],
+    "10": [
+     " `",
+     " Italy",
+     "\u610f\u5927\u5229",
+     " italian",
+     "Italy"
+    ],
+    "11": [
+     "\u610f\u5927\u5229",
+     "Italy",
+     " Italy",
+     " italian",
+     " Italian"
+    ],
+    "12": [
+     " Italy",
+     "\u610f\u5927\u5229",
+     "Italy",
+     " italian",
+     " -->"
+    ],
+    "13": [
+     "____",
+     "?",
+     "\uff1f",
+     "'?",
+     "\\\""
+    ],
+    "14": [
+     "\uff1f",
+     "**?",
+     "?",
+     "____",
+     "'?"
+    ],
+    "15": [
+     "?",
+     "\uff1f",
+     "**?",
+     "'?",
+     "____"
+    ],
+    "16": [
+     "?",
+     "\uff1f",
+     "'?",
+     " Italy",
+     "____"
+    ],
+    "17": [
+     "?",
+     "____",
+     "\uff1f",
+     "'?",
+     " ____"
+    ],
+    "18": [
+     "____",
+     "?",
+     " ____",
+     "?\\",
+     "?*"
+    ],
+    "19": [
+     "____",
+     "?",
+     ".",
+     "?\\",
+     " ____"
+    ],
+    "20": [
+     "____",
+     "?",
+     " Italy",
+     " ____",
+     " Italian"
+    ],
+    "21": [
+     ".\\\"",
+     "-shaped",
+     "/boot",
+     ".\\",
+     " Italy"
+    ],
+    "22": [
+     "-shaped",
+     " shape",
+     "\u5f62\u72b6",
+     " shaped",
+     "shape"
+    ],
+    "23": [
+     "-shaped",
+     " shape",
+     "\u5f62\u72b6",
+     " shaped",
+     "shape"
+    ],
+    "24": [
+     "-shaped",
+     " shape",
+     " shaped",
+     "shape",
+     "\u5f62\u72b6"
+    ],
+    "25": [
+     " shape",
+     "shape",
+     "-shaped",
+     "\u5f62\u72b6",
+     " shaped"
+    ],
+    "26": [
+     " boot",
+     "boot",
+     "\u9774",
+     " Boot",
+     "/boot"
+    ],
+    "27": [
+     " boot",
+     "boot",
+     " Boot",
+     "\u9774",
+     " boots"
+    ],
+    "28": [
+     " boot",
+     "boot",
+     " boots",
+     " Boot",
+     "/boot"
+    ],
+    "29": [
+     " boot",
+     " shoe",
+     " is",
+     "boot",
+     " shape"
+    ],
+    "30": [
+     " is",
+     " shape",
+     " shaped",
+     "-shaped",
+     " heel"
+    ]
+   },
+   "logit_lens_top5": {
+    "0": [
+     " boot",
+     "boot",
+     " Boot",
+     "Boot",
+     "-boot"
+    ],
+    "1": [
+     " boot",
+     "boot",
+     " Boot",
+     "Boot",
+     "-boot"
+    ],
+    "2": [
+     " boot",
+     "boot",
+     " Boot",
+     "-boot",
+     "Boot"
+    ],
+    "3": [
+     " boot",
+     "boot",
+     " Boot",
+     "-boot",
+     "/boot"
+    ],
+    "4": [
+     " boot",
+     "\ufffd",
+     "boot",
+     "\u9774",
+     "load"
+    ],
+    "5": [
+     " boot",
+     "boot",
+     "ild",
+     " \u0641\u0631\u0636",
+     "soles"
+    ],
+    "6": [
+     "\ub8e9",
+     "injau",
+     "MESS",
+     " c\u00e1n",
+     "\u8d8a\u957f"
+    ],
+    "7": [
+     "UDI",
+     "GPC",
+     "\u0e34\u0e23\u0e4c",
+     "edom",
+     " heel"
+    ],
+    "8": [
+     "oman",
+     "edom",
+     "\u05d5\u05dc\u05d9",
+     "GPC",
+     " Urlaubs"
+    ],
+    "9": [
+     "\u957f\u5728",
+     " Urlaubs",
+     "oman",
+     "Siamo",
+     "\u4f1a\u540e"
+    ],
+    "10": [
+     "\u957f\u5728",
+     "Siamo",
+     " vaguely",
+     "ulus",
+     " \u0410\u0443"
+    ],
+    "11": [
+     " rampant",
+     "KNOWN",
+     "outlined",
+     "Siamo",
+     " milione"
+    ],
+    "12": [
+     "shaw",
+     " ril",
+     "\u534a\u8fb9",
+     " \u062c\u0627\u0645",
+     "\u5e45"
+    ],
+    "13": [
+     "shaw",
+     "\u4f1a\u540e",
+     "LEAR",
+     "\u4e07\u5bb6",
+     "KNOWN"
+    ],
+    "14": [
+     "\u4e3e\u4e16",
+     "\u4e07\u5bb6",
+     " Lager",
+     "\u957f\u5728",
+     "shaw"
+    ],
+    "15": [
+     "\u0e27\u0e22",
+     "\u4e3e\u4e16",
+     "shaw",
+     "rea",
+     " Lager"
+    ],
+    "16": [
+     "shaw",
+     "\u0e27\u0e22",
+     "amaz",
+     "REA",
+     "\u4e3e\u4e16"
+    ],
+    "17": [
+     "shaw",
+     " \u0410\u0443",
+     "\u064d",
+     "\u4e3e\u4e16",
+     "\u0e27\u0e22"
+    ],
+    "18": [
+     " lodging",
+     "uled",
+     "soles",
+     "shaw",
+     "les"
+    ],
+    "19": [
+     "KNOWN",
+     "-shaped",
+     "CONTACT",
+     "tenzione",
+     "soles"
+    ],
+    "20": [
+     "-shaped",
+     "shapes",
+     "soles",
+     "\ud83d\ude00",
+     "\u5f62\u72b6"
+    ],
+    "21": [
+     "soles",
+     "\u889c",
+     "leneck",
+     "\ud83d\ude00",
+     "boot"
+    ],
+    "22": [
+     "\u5f62\u72b6",
+     "\u5f62\u72b6\u7684",
+     "\u7684\u5f62\u72b6",
+     "shape",
+     "-shaped"
+    ],
+    "23": [
+     "\u7684\u5f62\u72b6",
+     "\u5f62\u72b6\u7684",
+     "\u5f62\u72b6",
+     "shape",
+     "-shaped"
+    ],
+    "24": [
+     "\u7684\u5f62\u72b6",
+     "\u5f62\u72b6\u7684",
+     "shape",
+     "\u5f62\u72b6",
+     "-shaped"
+    ],
+    "25": [
+     "\u7684\u5f62\u72b6",
+     "shape",
+     "\u5f62\u72b6",
+     "\u5f62\u72b6\u7684",
+     " shape"
+    ],
+    "26": [
+     "boot",
+     " boot",
+     " Boot",
+     "/boot",
+     "\u9774"
+    ],
+    "27": [
+     "boot",
+     " boot",
+     "/boot",
+     " Boot",
+     "\u9774"
+    ],
+    "28": [
+     "boot",
+     " boot",
+     "/boot",
+     " Boot",
+     "-boot"
+    ],
+    "29": [
+     "boot",
+     " boot",
+     "/boot",
+     " Boot",
+     "-boot"
+    ],
+    "30": [
+     " is",
+     " shape",
+     "-shaped",
+     " heel",
+     " shaped"
+    ]
+   },
+   "model_top5": [
+    " is",
+    " in",
+    " on",
+    ".",
+    " with"
+   ]
+  },
+  "final_pos": {
+   "position": -1,
+   "targets": [
+    "euro",
+    "lira",
+    "lire"
+   ],
+   "jlens_first_layer": 23,
+   "logit_lens_first_layer": 25,
+   "jlens_precedes_logit_lens": true,
+   "jlens_top5": {
+    "0": [
+     " '",
+     " ...",
+     " --",
+     " however",
+     " -"
+    ],
+    "1": [
+     " ...",
+     "...",
+     " --",
+     "\n\n",
+     " ;"
+    ],
+    "2": [
+     ",",
+     ".",
+     "\n",
+     "\u00b7",
+     "\","
+    ],
+    "3": [
+     " ...",
+     " \n",
+     " --",
+     "...",
+     " ;"
+    ],
+    "4": [
+     ".",
+     "...",
+     " ...",
+     ",",
+     "'"
+    ],
+    "5": [
+     "...",
+     ".",
+     " ...",
+     " [...]",
+     ".\\"
+    ],
+    "6": [
+     " ...",
+     "...",
+     " \n",
+     "____",
+     " \\"
+    ],
+    "7": [
+     " ...",
+     " \\",
+     " \n",
+     "\uff1f",
+     "..."
+    ],
+    "8": [
+     " ...",
+     "...",
+     " \n",
+     " [...]",
+     " \\"
+    ],
+    "9": [
+     " ...",
+     "____",
+     "...",
+     " [...]",
+     "\uff1f"
+    ],
+    "10": [
+     " ...",
+     "...",
+     " [...]",
+     " ...\\",
+     "____"
+    ],
+    "11": [
+     " ...",
+     "...",
+     " [...]",
+     " ...\\",
+     " ...\""
+    ],
+    "12": [
+     "...",
+     " ...",
+     " ...\\",
+     "____",
+     "...\\"
+    ],
+    "13": [
+     "____",
+     " ____",
+     "...",
+     " ______",
+     " ..."
+    ],
+    "14": [
+     "____",
+     " ____",
+     "________",
+     " ___",
+     " ______"
+    ],
+    "15": [
+     "____",
+     "?\\",
+     "\\n",
+     "________",
+     "\\\""
+    ],
+    "16": [
+     "\\n",
+     ".\\",
+     "____",
+     "\\\"",
+     " ___"
+    ],
+    "17": [
+     ".\\",
+     "____",
+     "\\n",
+     "\\\"",
+     "."
+    ],
+    "18": [
+     ".\\",
+     ".\\\"",
+     "\\\"",
+     "\\n",
+     "____"
+    ],
+    "19": [
+     ".\\",
+     "\\\"",
+     "\\n",
+     ".\\\"",
+     "\\."
+    ],
+    "20": [
+     ".\\",
+     "\\\"",
+     ".\\\"",
+     " currency",
+     "____"
+    ],
+    "21": [
+     " currency",
+     " Currency",
+     "\u8d27\u5e01",
+     "currency",
+     " currencies"
+    ],
+    "22": [
+     " currency",
+     " Currency",
+     "currency",
+     "\u8d27\u5e01",
+     " currencies"
+    ],
+    "23": [
+     " euros",
+     " Euros",
+     " currency",
+     " Dollars",
+     " dollars"
+    ],
+    "24": [
+     " currency",
+     " dollars",
+     " euros",
+     " Dollars",
+     " Dollar"
+    ],
+    "25": [
+     " euro",
+     " euros",
+     " Euro",
+     "\u6b27\u5143",
+     " Euros"
+    ],
+    "26": [
+     " euros",
+     " euro",
+     " Euro",
+     " Euros",
+     "\u6b27\u5143"
+    ],
+    "27": [
+     " euro",
+     " Euro",
+     " euros",
+     " Euros",
+     "\u6b27\u5143"
+    ],
+    "28": [
+     " euro",
+     " Euro",
+     " euros",
+     " Euros",
+     "\u6b27\u5143"
+    ],
+    "29": [
+     " Euro",
+     " euro",
+     " Euros",
+     " euros",
+     "\u6b27\u5143"
+    ],
+    "30": [
+     " Euro",
+     " the",
+     " Euros",
+     " euros",
+     " euro"
+    ]
+   },
+   "logit_lens_top5": {
+    "0": [
+     " is",
+     "is",
+     " was",
+     "\u662f",
+     " are"
+    ],
+    "1": [
+     " is",
+     " indeed",
+     "omers",
+     "omer",
+     "often"
+    ],
+    "2": [
+     "\u56e0\u4e3a\u5b83",
+     "\u6765",
+     " doesn",
+     " not",
+     " is"
+    ],
+    "3": [
+     " something",
+     " g\u00ec",
+     " what",
+     "olation",
+     " specifically"
+    ],
+    "4": [
+     " specifically",
+     "le",
+     " g\u00ec",
+     "va",
+     " something"
+    ],
+    "5": [
+     "\u0142ad",
+     "statt",
+     "\u306c",
+     "\u6570\u662f",
+     "inasikan"
+    ],
+    "6": [
+     " souhaitent",
+     "urge",
+     " endeavors",
+     "\u062b\u0629",
+     " laboratories"
+    ],
+    "7": [
+     "____",
+     " jeste",
+     "lah",
+     " nemlig",
+     "\u4e4b\u56fd"
+    ],
+    "8": [
+     "\u0432\u043b\u0430\u0436",
+     " litri",
+     "\u0648\u0627\u0633",
+     " Moms",
+     " %@\","
+    ],
+    "9": [
+     "\u0648\u0627\u0633",
+     " nemlig",
+     "LOTS",
+     "vaart",
+     "\u8fd9\u8ba9\u6211"
+    ],
+    "10": [
+     "\u0627\u0639",
+     "Compiled",
+     "odge",
+     "oes",
+     "$b"
+    ],
+    "11": [
+     " nemlig",
+     " toti\u017e",
+     "besondere",
+     "allon",
+     "bergen"
+    ],
+    "12": [
+     " nemlig",
+     " toti\u017e",
+     "Occurrences",
+     "bergen",
+     " \u0645\u0644\u0643"
+    ],
+    "13": [
+     "\u539f\u4ef6\u53ca\u590d\u5370\u4ef6",
+     " Moms",
+     "Occurrences",
+     " toti\u017e",
+     " nemlig"
+    ],
+    "14": [
+     "____",
+     "oft",
+     " fond",
+     "\u83ab\u8fc7\u4e8e",
+     "\u5373"
+    ],
+    "15": [
+     "holds",
+     "____",
+     "\u539f\u4ef6\u53ca\u590d\u5370\u4ef6",
+     "bro",
+     "VERSE"
+    ],
+    "16": [
+     "\u539f\u4ef6\u53ca\u590d\u5370\u4ef6",
+     " fond",
+     "\u0448\u0442\u0435",
+     "\u53d8\u66f4\u4e3a",
+     " thinly"
+    ],
+    "17": [
+     "egot",
+     "\u539f\u4ef6\u53ca\u590d\u5370\u4ef6",
+     "(TM",
+     "\u5dc5",
+     " centuries"
+    ],
+    "18": [
+     "\u539f\u4ef6\u53ca\u590d\u5370\u4ef6",
+     "\u4e1c\u5317",
+     "gesteld",
+     "(TM",
+     "egot"
+    ],
+    "19": [
+     "\u539f\u4ef6\u53ca\u590d\u5370\u4ef6",
+     "(TM",
+     "orate",
+     " berin",
+     "/is"
+    ],
+    "20": [
+     "bearer",
+     "\u3057\u3083\u308c",
+     " berin",
+     "\u0434\u0435\u0440\u0436",
+     "\u539f\u4ef6\u53ca\u590d\u5370\u4ef6"
+    ],
+    "21": [
+     "bearer",
+     " bearer",
+     "called",
+     "\u4e3e\u4e16",
+     "(TM"
+    ],
+    "22": [
+     "called",
+     " called",
+     "oglio",
+     " \u0432\u0430\u043b\u044e",
+     "\u539f\u4ef6\u53ca\u590d\u5370\u4ef6"
+    ],
+    "23": [
+     "-den",
+     "called",
+     "lets",
+     " called",
+     "cams"
+    ],
+    "24": [
+     " called",
+     "called",
+     "currency",
+     " Dollars",
+     " fiat"
+    ],
+    "25": [
+     " called",
+     "called",
+     " euro",
+     " Euro",
+     " euros"
+    ],
+    "26": [
+     " called",
+     "called",
+     "\u53eb",
+     "\u53eb\u4ec0\u4e48",
+     "\u53eb\u6211"
+    ],
+    "27": [
+     " Euro",
+     " euro",
+     " Euros",
+     " euros",
+     "Euro"
+    ],
+    "28": [
+     " called",
+     " Euros",
+     " euros",
+     " euro",
+     " Euro"
+    ],
+    "29": [
+     " Euros",
+     "\u30e6\u30fc",
+     " called",
+     " euros",
+     " Euro"
+    ],
+    "30": [
+     " called",
+     " the",
+     " Euros",
+     " Euro",
+     " known"
+    ]
+   },
+   "model_top5": [
+    " the",
+    " called",
+    " a",
+    " Euro",
+    " not"
+   ]
+  },
+  "pass": true
+ },
+ "E0.1b": {
+  "layer": 30,
+  "per_snippet_overlap": [
+   0.6,
+   1.0,
+   0.6,
+   0.4,
+   0.6,
+   0.6,
+   0.4,
+   0.6,
+   0.8,
+   0.6
+  ],
+  "mean_overlap": 0.62,
+  "pass_60pct": true,
+  "K0_fires_below_40pct": false
+ }
+}

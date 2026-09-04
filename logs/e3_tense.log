@@ -1,0 +1,24 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 968.35it/s]
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:  10%|█         | 88/851 [00:00<00:00, 789.32it/s]Loading weights:  20%|█▉        | 167/851 [00:00<00:01, 550.74it/s]Loading weights:  27%|██▋       | 226/851 [00:00<00:01, 502.26it/s]Loading weights:  33%|███▎      | 279/851 [00:00<00:01, 501.53it/s]Loading weights:  39%|███▉      | 331/851 [00:00<00:01, 502.80it/s]Loading weights:  46%|████▌     | 388/851 [00:00<00:00, 523.03it/s]Loading weights:  52%|█████▏    | 444/851 [00:00<00:00, 520.69it/s]Loading weights:  58%|█████▊    | 497/851 [00:00<00:00, 482.77it/s]Loading weights:  66%|██████▌   | 559/851 [00:01<00:00, 513.27it/s]Loading weights:  72%|███████▏  | 612/851 [00:01<00:00, 507.16it/s]Loading weights:  78%|███████▊  | 664/851 [00:01<00:00, 467.84it/s]Loading weights:  84%|████████▎ | 712/851 [00:01<00:00, 461.60it/s]Loading weights:  91%|█████████▏| 778/851 [00:01<00:00, 509.18it/s]Loading weights: 100%|██████████| 851/851 [00:01<00:00, 532.04it/s]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 151.45it/s]
+tense: l*=28, 30 stimuli, 20 ranked candidates
+  mean (B)-(A) gap = 0.2042
+  k= 1 ('gdn', 24) -> 6.1% of the gap closed
+  k= 2 ('gdn', 28) -> 45.2% of the gap closed
+  k= 3 ('gdn', 21) -> 56.3% of the gap closed
+  k= 4 ('mlp', 10) -> 76.6% of the gap closed
+  |P_tense| = 4
+  random[matched] seed 0: 18.4%
+  random[matched] seed 1: 10.9%
+  random[matched] seed 2: -76.2%
+  random[matched] seed 3: 19.1%
+  random[matched] seed 4: -6.8%
+  random[broadcast_band] seed 0: -14.9%
+  random[broadcast_band] seed 1: -10.5%
+  random[broadcast_band] seed 2: -20.3%
+  random[broadcast_band] seed 3: -15.7%
+  random[broadcast_band] seed 4: -5.7%
+
+|P|=4 closes 76.6% of the gap; random matched -6.9%, broadcast-band heads -13.4%
+H4: naming 100% -> 100%, ref-continuation ppl 15.34 -> 15.37, dissociation True

@@ -1,0 +1,81 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 808.50it/s]
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 112/851 [00:00<00:00, 1063.30it/s]Loading weights:  26%|██▌       | 219/851 [00:00<00:00, 727.98it/s] Loading weights:  35%|███▌      | 298/851 [00:00<00:00, 634.98it/s]Loading weights:  43%|████▎     | 365/851 [00:00<00:00, 638.66it/s]Loading weights:  51%|█████     | 431/851 [00:00<00:00, 599.32it/s]Loading weights:  58%|█████▊    | 493/851 [00:00<00:00, 597.08it/s]Loading weights:  66%|██████▌   | 560/851 [00:00<00:00, 616.16it/s]Loading weights:  73%|███████▎  | 623/851 [00:00<00:00, 617.24it/s]Loading weights:  81%|████████  | 686/851 [00:01<00:00, 583.19it/s]Loading weights:  88%|████████▊ | 745/851 [00:01<00:00, 584.17it/s]Loading weights:  94%|█████████▍| 804/851 [00:01<00:00, 569.54it/s]Loading weights: 100%|██████████| 851/851 [00:01<00:00, 621.31it/s]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 85.25it/s]
+tense: l*=27, 30 stimuli (0 excluded by E0.2), 217 nodes (168 heads, 21 gdn, 28 mlp)
+/root/j-space-mech/scripts/e2_attribution.py:91: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  m_clean[pi] = float(m)
+  attribution [1/30] m(B)=0.670 m(A)=0.558
+  attribution [2/30] m(B)=1.151 m(A)=0.736
+  attribution [3/30] m(B)=1.997 m(A)=1.715
+  attribution [4/30] m(B)=1.446 m(A)=1.290
+  attribution [5/30] m(B)=2.762 m(A)=2.349
+  attribution [6/30] m(B)=0.892 m(A)=0.782
+  attribution [7/30] m(B)=1.469 m(A)=1.509
+  attribution [8/30] m(B)=1.699 m(A)=1.723
+  attribution [9/30] m(B)=2.578 m(A)=1.827
+  attribution [10/30] m(B)=1.135 m(A)=1.070
+  attribution [11/30] m(B)=1.921 m(A)=1.452
+  attribution [12/30] m(B)=1.776 m(A)=1.521
+  attribution [13/30] m(B)=1.051 m(A)=0.928
+  attribution [14/30] m(B)=1.219 m(A)=0.939
+  attribution [15/30] m(B)=1.456 m(A)=1.481
+  attribution [16/30] m(B)=1.740 m(A)=1.470
+  attribution [17/30] m(B)=2.489 m(A)=2.126
+  attribution [18/30] m(B)=3.397 m(A)=3.129
+  attribution [19/30] m(B)=1.450 m(A)=1.423
+  attribution [20/30] m(B)=2.897 m(A)=2.518
+  attribution [21/30] m(B)=2.230 m(A)=1.772
+  attribution [22/30] m(B)=1.410 m(A)=1.335
+  attribution [23/30] m(B)=1.546 m(A)=1.456
+  attribution [24/30] m(B)=0.700 m(A)=0.472
+  attribution [25/30] m(B)=2.788 m(A)=2.411
+  attribution [26/30] m(B)=2.283 m(A)=2.116
+  attribution [27/30] m(B)=1.625 m(A)=1.613
+  attribution [28/30] m(B)=0.711 m(A)=0.580
+  attribution [29/30] m(B)=2.578 m(A)=2.223
+  attribution [30/30] m(B)=1.816 m(A)=1.354
+
+verifying 46 candidates by activation patching ({'attn': 30, 'mlp': 8, 'gdn': 8})
+  patching [1/30]
+  patching [2/30]
+  patching [3/30]
+  patching [4/30]
+  patching [5/30]
+  patching [6/30]
+  patching [7/30]
+  patching [8/30]
+  patching [9/30]
+  patching [10/30]
+  patching [11/30]
+  patching [12/30]
+  patching [13/30]
+  patching [14/30]
+  patching [15/30]
+  patching [16/30]
+  patching [17/30]
+  patching [18/30]
+  patching [19/30]
+  patching [20/30]
+  patching [21/30]
+  patching [22/30]
+  patching [23/30]
+  patching [24/30]
+  patching [25/30]
+  patching [26/30]
+  patching [27/30]
+  patching [28/30]
+  patching [29/30]
+  patching [30/30]
+
+attribution mass: {
+ "attn_at_stimulus": 0.2402223186966398,
+ "attn_at_question": 0.07885563959879363,
+ "gdn_at_stimulus": 0.2459172532420742,
+ "gdn_at_question": 0.07781762942277584,
+ "mlp_at_stimulus": 0.2262096219719609,
+ "mlp_at_question": 0.13097753706775547
+}
+attribution-vs-patching r = 0.922 (K3 fires below 0.4)
+verified 46/46 candidates -> results/e2_attribution_tense_L27.json

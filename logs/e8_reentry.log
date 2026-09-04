@@ -1,0 +1,25 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 1088.32it/s]
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 154/851 [00:00<00:00, 1393.67it/s]Loading weights:  35%|███▍      | 294/851 [00:00<00:00, 729.54it/s] Loading weights:  45%|████▌     | 383/851 [00:00<00:00, 637.78it/s]Loading weights:  53%|█████▎    | 455/851 [00:00<00:00, 591.65it/s]Loading weights:  61%|██████▏   | 522/851 [00:00<00:00, 599.80it/s]Loading weights:  69%|██████▊   | 585/851 [00:00<00:00, 593.15it/s]Loading weights:  77%|███████▋  | 652/851 [00:01<00:00, 608.29it/s]Loading weights:  84%|████████▍ | 715/851 [00:01<00:00, 585.67it/s]Loading weights:  92%|█████████▏| 780/851 [00:01<00:00, 601.33it/s]Loading weights:  99%|█████████▉| 843/851 [00:01<00:00, 604.87it/s]Loading weights: 100%|██████████| 851/851 [00:01<00:00, 636.95it/s]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 116.30it/s]
+language: ablating P=['gdn/20', 'gdn/24', 'gdn/9'] at stimulus positions; grid = 63 layers x 41 positions
+  10/30
+  20/30
+  30/30
+
+  at p*=22, fraction of the (B)-(A) coordinate retained under ablation:
+    L24      -6%
+    L28      58%
+    L32      78%
+    L36      77%
+    L40      81%
+    L44      81%
+    L48      67%
+    L52      40%
+    L56      81%
+    L60      52%
+
+  re-entry by depth at p*: first layer > l* recovering >= 70% -> 32
+  re-entry by position at l*=24: first position > p* recovering -> None
+  coordinate at the final position, last lens layer: clean -1.208 / ablated -1.036 / (A) -1.488
+wrote results/e8_reentry_language.json
