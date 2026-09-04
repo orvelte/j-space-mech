@@ -446,6 +446,56 @@ def fig_e9():
     fig.tight_layout(); fig.savefig("figures/e9_carrier_specificity.png"); plt.close(fig)
 
 
+# --------------------------------------------------------------- E10
+def fig_e10():
+    import os
+    if not os.path.exists("results/e10_contentless.json"):
+        return
+    r = json.load(open("results/e10_contentless.json"))
+    m, gap, rows = r["unpatched_coord"], r["gap"], r["per_layer"]
+    LING = ["tense", "pos", "language"]
+    CONT = ["wordcount", "firstletter", "linecount", "linewidth"]
+    NICE = {"A": "(A) predict\nnext word", "tense": "tense", "pos": "part of\nspeech",
+            "language": "language", "wordcount": "how many\nwords",
+            "firstletter": "first\nletter", "linecount": "how many\nlines",
+            "linewidth": "longest\nline width"}
+    fig, (ax, ax2) = plt.subplots(1, 2, figsize=(11.5, 3.9),
+                                  gridspec_kw={"width_ratios": [1.25, 1]})
+
+    order = ["A"] + LING + CONT
+    share = [(m[k] - m["A"]) / gap for k in order]
+    cols = ["#999"] + [C_B] * 3 + ["#B0641E"] * 4
+    ax.bar(range(len(order)), share, color=cols, width=.68)
+    ax.axhline(0, color="k", lw=.7); ax.axhline(1, color=C_B, ls=":", lw=1)
+    for i, v in enumerate(share):
+        ax.text(i, v + (.06 if v >= 0 else -.13), f"{v:.0%}", ha="center", fontsize=7.5)
+    ax.set_xticks(range(len(order)))
+    ax.set_xticklabels([NICE[k] for k in order], fontsize=7)
+    ax.set_ylabel("Spanish coordinate at (L24, p*)\nas a share of the language-vs-(A) gap")
+    ax.set_ylim(-1.25, 2.15)
+    ax.text(2, 1.9, "linguistic questions", color=C_B, ha="center", fontsize=8)
+    ax.text(5.5, -1.15, "contentless questions", color="#B0641E", ha="center", fontsize=8)
+    ax.set_title("(a) only *linguistic* questions admit Spanish to the workspace.\n"
+                 "Counting words or letters pushes it BELOW the no-question baseline.",
+                 fontsize=9)
+
+    l9 = next(x for x in rows if x["layer"] == 9)
+    srcs = LING[:2] + CONT
+    vals = [l9[s_] for s_ in srcs]
+    ax2.bar(range(len(srcs)), vals,
+            color=[C_B, C_B] + ["#B0641E"] * 4, width=.6)
+    ax2.axhline(l9["A"], color="#33383D", ls="--", lw=1.1)
+    ax2.text(len(srcs) - .5, l9["A"] + .012, "patching from (A) = 28.0%",
+             ha="right", fontsize=7)
+    ax2.axhline(0, color="k", lw=.7)
+    ax2.set_xticks(range(len(srcs)))
+    ax2.set_xticklabels([NICE[s_] for s_ in srcs], fontsize=7)
+    ax2.set_ylabel("fraction of the (B)−(A) gap killed")
+    ax2.set_title("(b) L9 boundary patch: a linguistic question's carry\n"
+                  "substitutes for free; a contentless one does not", fontsize=9)
+    fig.tight_layout(); fig.savefig("figures/e10_contentless.png"); plt.close(fig)
+
+
 if __name__ == "__main__":
     import os, sys
     for f in (fig_e0_1, fig_e0_2, fig_e0_3, fig_e0_4, fig_e1):
@@ -457,3 +507,4 @@ if __name__ == "__main__":
     fig_e4(); print("ok fig_e4")
     fig_pivot(); print("ok fig_pivot")
     fig_e9(); print("ok fig_e9")
+    fig_e10(); print("ok fig_e10")
