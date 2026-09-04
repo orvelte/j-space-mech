@@ -496,6 +496,73 @@ def fig_e10():
     fig.tight_layout(); fig.savefig("figures/e10_contentless.png"); plt.close(fig)
 
 
+# --------------------------------------------------------------- E11
+def fig_e11():
+    import os
+    if not os.path.exists("results/e11_arms.json"):
+        return
+    r = json.load(open("results/e11_arms.json"))
+    M, arms = r["matrix"], r["arms"]
+    cols = ["Spanish", "past", "formal", "informal", "English", "table",
+            "purple", "Thursday", "adjective", "noun"]
+    nice_arm = {"none": "passage only*", "neutral": "neutral instruction",
+                "A": "(A) predict next word", "linewidth": "longest line width",
+                "wordcount": "how many words", "register": "register",
+                "tense": "tense", "pos": "part of speech", "language": "language"}
+
+    fig = plt.figure(figsize=(12.4, 4.6))
+    gs = fig.add_gridspec(1, 2, width_ratios=[1.05, 1.5], wspace=.3)
+
+    # (a) the ladder, paired, with SE
+    ax = fig.add_subplot(gs[0])
+    order = ["none", "neutral", "A", "linewidth", "wordcount", "register",
+             "tense", "language", "pos"]
+    d = [M[a]["Spanish"]["delta"] for a in order]
+    e = [M[a]["Spanish"]["se"] for a in order]
+    col = []
+    for a in order:
+        t = M[a]["Spanish"]["delta"] / M[a]["Spanish"]["se"] if M[a]["Spanish"]["se"] else 0
+        col.append(C_B if t >= 2 else ("#BBB" if a != "A" else "#666"))
+    ax.barh(range(len(order)), d, xerr=e, color=col, height=.66,
+            error_kw={"lw": .9, "ecolor": "#333"})
+    ax.axvline(0, color="k", lw=.7)
+    ax.axvline(M["language"]["Spanish"]["delta"], color=C_B, ls=":", lw=1)
+    ax.set_yticks(range(len(order)))
+    ax.set_yticklabels([nice_arm[a] for a in order], fontsize=7.5)
+    ax.invert_yaxis()
+    for i, a in enumerate(order):
+        t = M[a]["Spanish"]["delta"] / M[a]["Spanish"]["se"] if M[a]["Spanish"]["se"] else 0
+        ax.text(max(d[i], 0) + e[i] + .02, i, f"t={t:.1f}", va="center", fontsize=6.5,
+                color="#222" if abs(t) >= 2 else "#888")
+    ax.set_xlabel("Δ Spanish coordinate vs (A), paired over 30 passages")
+    ax.set_title("(a) blue = significant (|t| ≥ 2). Contentless questions and a\n"
+                 "neutral instruction leave Spanish at the (A) level.", fontsize=9)
+
+    # (b) the matrix
+    ax = fig.add_subplot(gs[1])
+    data = np.array([[M[a][c]["delta"] for c in cols] +
+                     [M[a]["_random_null"]["mean"]] for a in arms])
+    im = ax.imshow(data, cmap="RdBu_r", vmin=-.5, vmax=.5, aspect="auto")
+    for i in range(len(arms)):
+        for j in range(len(cols) + 1):
+            v = data[i, j]
+            ax.text(j, i, f"{v:.2f}", ha="center", va="center", fontsize=6,
+                    color="w" if abs(v) > .3 else "k")
+    ax.set_xticks(range(len(cols) + 1))
+    ax.set_xticklabels(cols + ["random\n(24 tok)"], fontsize=6.5, rotation=45, ha="right")
+    ax.set_yticks(range(len(arms)))
+    ax.set_yticklabels([nice_arm[a] for a in arms], fontsize=7)
+    ax.set_title("(b) every passage-global property rises together under a grammatical\n"
+                 "question — and ' adjective', the answer to the POS question, does not",
+                 fontsize=9)
+    fig.colorbar(im, ax=ax, fraction=.03, label="Δ vs (A)")
+    fig.text(.01, .01, "* passage-only arm has no prefix, so its absolute position "
+                       "differs from every other arm; shown for reference only.",
+             fontsize=6.5, color="#666")
+    fig.savefig("figures/e11_arms_matrix.png", bbox_inches="tight", dpi=150)
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     import os, sys
     for f in (fig_e0_1, fig_e0_2, fig_e0_3, fig_e0_4, fig_e1):
@@ -507,4 +574,4 @@ if __name__ == "__main__":
     fig_e4(); print("ok fig_e4")
     fig_pivot(); print("ok fig_pivot")
     fig_e9(); print("ok fig_e9")
-    fig_e10(); print("ok fig_e10")
+    fig_e11(); print("ok fig_e11")
