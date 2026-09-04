@@ -1,0 +1,23 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 1168.66it/s]
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 99/851 [00:00<00:00, 989.76it/s]Loading weights:  23%|██▎       | 198/851 [00:00<00:01, 618.57it/s]Loading weights:  31%|███▏      | 268/851 [00:00<00:00, 603.36it/s]Loading weights:  40%|███▉      | 340/851 [00:00<00:00, 600.30it/s]Loading weights:  48%|████▊     | 411/851 [00:00<00:00, 606.25it/s]Loading weights:  56%|█████▌    | 474/851 [00:00<00:00, 607.88it/s]Loading weights:  63%|██████▎   | 536/851 [00:00<00:00, 594.22it/s]Loading weights:  70%|███████   | 597/851 [00:00<00:00, 581.15it/s]Loading weights:  78%|███████▊  | 661/851 [00:01<00:00, 558.23it/s]Loading weights:  84%|████████▍ | 718/851 [00:01<00:00, 555.51it/s]Loading weights:  91%|█████████ | 774/851 [00:01<00:00, 524.16it/s]Loading weights:  97%|█████████▋| 827/851 [00:01<00:00, 519.51it/s]Loading weights: 100%|██████████| 851/851 [00:01<00:00, 558.34it/s]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 139.61it/s]
+pos: l*=30, 22 stimuli, 20 ranked candidates
+  mean (B)-(A) gap = 0.2912
+  k= 1 ('gdn', 25) -> 51.5% of the gap closed
+  k= 2 ('mlp', 25) -> 150.9% of the gap closed
+  |P_pos| = 2
+  random[matched] seed 0: 3.8%
+  random[matched] seed 1: 6.1%
+  random[matched] seed 2: -0.5%
+  random[matched] seed 3: -11.1%
+  random[matched] seed 4: -86.2%
+  random[broadcast_band] seed 0: 8.9%
+  random[broadcast_band] seed 1: -0.2%
+  random[broadcast_band] seed 2: 13.8%
+  random[broadcast_band] seed 3: -17.0%
+  random[broadcast_band] seed 4: 1.1%
+
+|P|=2 closes 150.9% of the gap; random matched -17.6%, broadcast-band heads 1.3%
+H4: naming 100% -> 82%, ref-continuation ppl 10.83 -> 10.80, dissociation False
+E3_DONE

@@ -1,0 +1,36 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 1341.86it/s]
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 129/851 [00:00<00:00, 1206.76it/s]Loading weights:  29%|██▉       | 250/851 [00:00<00:00, 773.42it/s] Loading weights:  39%|███▉      | 336/851 [00:00<00:00, 676.05it/s]Loading weights:  48%|████▊     | 408/851 [00:00<00:00, 609.93it/s]Loading weights:  55%|█████▌    | 472/851 [00:00<00:00, 587.70it/s]Loading weights:  63%|██████▎   | 532/851 [00:00<00:00, 554.42it/s]Loading weights:  69%|██████▉   | 588/851 [00:00<00:00, 539.08it/s]Loading weights:  77%|███████▋  | 653/851 [00:01<00:00, 567.41it/s]Loading weights:  84%|████████▎ | 711/851 [00:01<00:00, 524.07it/s]Loading weights:  90%|████████▉ | 765/851 [00:01<00:00, 483.24it/s]Loading weights:  96%|█████████▌| 818/851 [00:01<00:00, 478.15it/s]Loading weights: 100%|██████████| 851/851 [00:01<00:00, 569.79it/s]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 44.45it/s]
+30/30 passages aligned across all 8 questions
+
+unpatched Spanish coordinate at (l*=24, p*):
+  A         1.7324   (    0% of the language-vs-A gap)
+  tense     1.9116   (   80% of the language-vs-A gap)
+  pos       2.1309   (  178% of the language-vs-A gap)
+  wordcount 1.7071   (  -11% of the language-vs-A gap)
+  firstletter 1.5259   (  -93% of the language-vs-A gap)
+  linecount 1.5641   (  -75% of the language-vs-A gap)
+  linewidth 1.5929   (  -63% of the language-vs-A gap)
+  language  1.9557   (  100% of the language-vs-A gap)
+  (B_language)-(A) gap = 0.2232
+
+capturing boundary states...
+  L8   gdn   kills: A  10.3%  tense  -0.3%  pos   2.2%  wordc  11.7%  first  10.2%  linec  13.5%  linew   1.8%  langu   0.0%
+  L9   gdn   kills: A  28.0%  tense -14.5%  pos  -8.0%  wordc  11.3%  first  25.7%  linec   7.8%  linew -12.4%  langu   0.0%
+  L10  gdn   kills: A  10.0%  tense   5.6%  pos   7.6%  wordc   1.6%  first   8.9%  linec  -1.3%  linew  -2.1%  langu   0.0%
+  L12  gdn   kills: A   9.1%  tense   2.5%  pos -10.0%  wordc   4.7%  first   3.1%  linec   8.1%  linew   9.0%  langu   0.0%
+  L15  attn  kills: A  10.4%  tense  -1.1%  pos  -0.8%  wordc   5.2%  first   2.0%  linec   3.2%  linew   5.0%  langu   0.0%
+  L24  gdn   kills: A  15.7%  tense   5.3%  pos  13.1%  wordc   9.9%  first  13.6%  linec   9.5%  linew  12.3%  langu   0.0%
+
+boundary patch at the carrier layers (ranked by the A patch):
+  layer            A      tense        pos  wordcount  firstlett  linecount  linewidth   language
+  L9          28.0%     -14.5%      -8.0%      11.3%      25.7%       7.8%     -12.4%       0.0% 
+  L24         15.7%       5.3%      13.1%       9.9%      13.6%       9.5%      12.3%       0.0% 
+  L15         10.4%      -1.1%      -0.8%       5.2%       2.0%       3.2%       5.0%       0.0% 
+  L8          10.3%      -0.3%       2.2%      11.7%      10.2%      13.5%       1.8%       0.0% 
+  L10         10.0%       5.6%       7.6%       1.6%       8.9%      -1.3%      -2.1%       0.0% 
+  L12          9.1%       2.5%     -10.0%       4.7%       3.1%       8.1%       9.0%       0.0% 
+
+  D15: mean contentless share = -60% -> RETRACT generic
+wrote results/e10_contentless.json

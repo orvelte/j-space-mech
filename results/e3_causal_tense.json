@@ -1,0 +1,71 @@
+{
+ "property": "tense",
+ "l_star": 28,
+ "n_stimuli": 30,
+ "BA_gap_mean": 0.20416433811187745,
+ "curve": [
+  {
+   "k": 1,
+   "mean_coord": 0.9725563953320185,
+   "frac_of_gap_closed": 0.060602622705107315
+  },
+  {
+   "k": 2,
+   "mean_coord": 0.8905396685004234,
+   "frac_of_gap_closed": 0.45172776010668675
+  },
+  {
+   "k": 3,
+   "mean_coord": 0.8707650899887085,
+   "frac_of_gap_closed": 0.5634704437502589
+  },
+  {
+   "k": 4,
+   "mean_coord": 0.835400611658891,
+   "frac_of_gap_closed": 0.7664180308927658
+  }
+ ],
+ "P_prop": [
+  "gdn/24",
+  "gdn/28",
+  "gdn/21",
+  "mlp/10"
+ ],
+ "size": 4,
+ "reached_70pct": true,
+ "frac_of_gap_closed": 0.7664180308927658,
+ "K4_diffuse": false,
+ "random_baselines": {
+  "matched": {
+   "per_seed": [
+    0.18426501121977645,
+    0.10893054656305326,
+    -0.7615604772512651,
+    0.1905679546024853,
+    -0.06844842235708991
+   ],
+   "mean": -0.069249077444608,
+   "sd": 0.40087965059835207
+  },
+  "broadcast_band": {
+   "per_seed": [
+    -0.1490123795572794,
+    -0.10512904571474163,
+    -0.20312030659316196,
+    -0.15711771402320587,
+    -0.0570250357070795
+   ],
+   "mean": -0.13428089631909365,
+   "sd": 0.055442987926091064
+  }
+ },
+ "H4": {
+  "naming_accuracy_baseline": 1.0,
+  "naming_accuracy_ablated": 1.0,
+  "ref_continuation_ppl_baseline": 15.338230481180082,
+  "ref_continuation_ppl_ablated": 15.37226717692716,
+  "still_spanish_frac": null,
+  "behaviour_within_10pct": true,
+  "dissociation_holds": true
+ }
+}

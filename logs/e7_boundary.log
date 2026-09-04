@@ -1,0 +1,45 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 1079.32it/s]
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:  15%|█▍        | 125/851 [00:00<00:00, 1164.21it/s]Loading weights:  28%|██▊       | 242/851 [00:00<00:00, 746.05it/s] Loading weights:  38%|███▊      | 325/851 [00:00<00:00, 603.54it/s]Loading weights:  46%|████▌     | 391/851 [00:00<00:00, 560.58it/s]Loading weights:  53%|█████▎    | 450/851 [00:00<00:00, 520.42it/s]Loading weights:  59%|█████▉    | 504/851 [00:00<00:00, 500.58it/s]Loading weights:  69%|██████▉   | 586/851 [00:00<00:00, 557.27it/s]Loading weights:  76%|███████▋  | 650/851 [00:01<00:00, 577.32it/s]Loading weights:  83%|████████▎ | 709/851 [00:01<00:00, 517.17it/s]Loading weights:  92%|█████████▏| 782/851 [00:01<00:00, 548.29it/s]Loading weights:  99%|█████████▊| 839/851 [00:01<00:00, 529.07it/s]Loading weights: 100%|██████████| 851/851 [00:01<00:00, 574.49it/s]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 119.60it/s]
+language: l*=24, patching the boundary at each of layers 0–24, 30 stimuli
+  (B)-(A) gap = 0.2232
+  L0   gdn   coord 1.9450  kills    4.8% of the gap
+  L1   gdn   coord 1.9567  kills   -0.5% of the gap
+  L2   gdn   coord 1.9426  kills    5.8% of the gap
+  L3   attn  coord 1.9812  kills  -11.5% of the gap
+  L4   gdn   coord 1.9680  kills   -5.5% of the gap
+  L5   gdn   coord 1.9688  kills   -5.9% of the gap
+  L6   gdn   coord 1.9540  kills    0.8% of the gap
+  L7   attn  coord 1.9477  kills    3.6% of the gap
+  L8   gdn   coord 1.9326  kills   10.3% of the gap
+  L9   gdn   coord 1.8931  kills   28.0% of the gap
+  L10  gdn   coord 1.9334  kills   10.0% of the gap
+  L11  attn  coord 1.9507  kills    2.2% of the gap
+  L12  gdn   coord 1.9353  kills    9.1% of the gap
+  L13  gdn   coord 1.9584  kills   -1.2% of the gap
+  L14  gdn   coord 1.9402  kills    6.9% of the gap
+  L15  attn  coord 1.9323  kills   10.4% of the gap
+  L16  gdn   coord 1.9867  kills  -13.9% of the gap
+  L17  gdn   coord 1.9599  kills   -1.9% of the gap
+  L18  gdn   coord 1.9355  kills    9.1% of the gap
+  L19  attn  coord 1.9414  kills    6.4% of the gap
+  L20  gdn   coord 1.9427  kills    5.8% of the gap
+  L21  gdn   coord 1.9446  kills    4.9% of the gap
+  L22  gdn   coord 1.9450  kills    4.8% of the gap
+  L23  attn  coord 1.9444  kills    5.1% of the gap
+  L24  gdn   coord 1.9206  kills   15.7% of the gap
+
+  top 8 boundary-carrying layers:
+    L9   gdn     28.0%
+    L24  gdn     15.7%
+    L15  attn    10.4%
+    L8   gdn     10.3%
+    L10  gdn     10.0%
+    L12  gdn      9.1%
+    L18  gdn      9.1%
+    L14  gdn      6.9%
+
+  best single attention layer: 10.4%
+  best single GDN layer:       28.0%
+wrote results/e7_boundary_language.json

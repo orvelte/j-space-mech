@@ -1,0 +1,38 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 1046.74it/s]
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 104/851 [00:00<00:00, 1014.90it/s]Loading weights:  24%|██▍       | 206/851 [00:00<00:00, 719.11it/s] Loading weights:  33%|███▎      | 283/851 [00:00<00:00, 682.61it/s]Loading weights:  42%|████▏     | 354/851 [00:00<00:00, 632.61it/s]Loading weights:  49%|████▉     | 419/851 [00:00<00:00, 584.01it/s]Loading weights:  58%|█████▊    | 493/851 [00:00<00:00, 613.59it/s]Loading weights:  67%|██████▋   | 568/851 [00:00<00:00, 608.20it/s]Loading weights:  75%|███████▍  | 638/851 [00:00<00:00, 625.81it/s]Loading weights:  82%|████████▏ | 702/851 [00:01<00:00, 571.21it/s]Loading weights:  90%|████████▉ | 763/851 [00:01<00:00, 581.48it/s]Loading weights:  97%|█████████▋| 822/851 [00:01<00:00, 583.15it/s]Loading weights: 100%|██████████| 851/851 [00:01<00:00, 624.92it/s]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 143.97it/s]
+language: l*=24, window 24-32, 30 stimuli
+
+Part A -- direct/indirect split at l*
+  gdn/20     Δm  -0.1158 = direct  -0.0722 + indirect  -0.0436   (   62% direct)
+  gdn/24     Δm  -0.0802 = direct  -0.0473 + indirect  -0.0329   (   59% direct)
+  gdn/9      Δm  -0.0733 = direct   0.0004 + indirect  -0.0737   (   -1% direct)
+  mlp/24     Δm  -0.0720 = direct  -0.0722 + indirect   0.0002   (  100% direct)
+  attn/15    Δm  -0.0651 = direct  -0.0159 + indirect  -0.0492   (   24% direct)
+  mlp/17     Δm  -0.0608 = direct   0.0047 + indirect  -0.0655   (   -8% direct)
+  mlp/10     Δm  -0.0576 = direct  -0.0028 + indirect  -0.0547   (    5% direct)
+  gdn/21     Δm  -0.0516 = direct   0.0000 + indirect  -0.0516   (   -0% direct)
+  gdn/14     Δm  -0.0467 = direct   0.0050 + indirect  -0.0517   (  -11% direct)
+  gdn/22     Δm  -0.0450 = direct  -0.0184 + indirect  -0.0266   (   41% direct)
+  median direct fraction of top 10: 15%
+
+Part B -- block effects against the integrated metric over 24-32
+  integrated (B)-(A) gap = 3.3427
+  top 10 under the integrated metric:
+    gdn/20     Δm  -0.9834     -29%
+    gdn/14     Δm  -0.6640     -20%
+    gdn/9      Δm  -0.6072     -18%
+    gdn/21     Δm  -0.6025     -18%
+    attn/19    Δm  -0.5070     -15%
+    attn/15    Δm  -0.4901     -15%
+    mlp/17     Δm  -0.4350     -13%
+    mlp/10     Δm  -0.4055     -12%
+    mlp/27     Δm  -0.3415     -10%
+    gdn/22     Δm  -0.3222     -10%
+
+  top-10 Jaccard, l*=24 vs integrated 24-32: 0.67
+  shared: ['attn/15', 'gdn/14', 'gdn/20', 'gdn/21', 'gdn/22', 'gdn/9', 'mlp/10', 'mlp/17']
+
+  D14 rule -> direct>70%: False, Jaccard<0.30: False, REFRAME: False
+wrote results/e6_direct_effect_language.json

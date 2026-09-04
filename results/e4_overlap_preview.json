@@ -1,0 +1,99 @@
+{
+ "pairwise": [
+  {
+   "a": "language",
+   "b": "tense",
+   "common_pool_max_layer": 24,
+   "pool_size": 188,
+   "n_a": 42,
+   "n_b": 34,
+   "shared": [
+    "attn/11/0",
+    "attn/11/1",
+    "attn/11/23",
+    "attn/15/13",
+    "attn/19/22",
+    "attn/23/14",
+    "attn/23/17",
+    "attn/23/7",
+    "attn/3/13",
+    "attn/7/21",
+    "gdn/14",
+    "gdn/22",
+    "gdn/24",
+    "gdn/9",
+    "mlp/13",
+    "mlp/17",
+    "mlp/9"
+   ],
+   "jaccard": 0.288135593220339,
+   "chance_jaccard": 0.10955784918616435,
+   "ratio_vs_chance": 2.6299858509519423,
+   "p_value": 0.0,
+   "meets_3x_prediction": false
+  },
+  {
+   "a": "language",
+   "b": "pos",
+   "common_pool_max_layer": 24,
+   "pool_size": 188,
+   "n_a": 42,
+   "n_b": 28,
+   "shared": [
+    "attn/11/0",
+    "attn/11/1",
+    "attn/11/3",
+    "attn/15/13",
+    "attn/19/13",
+    "attn/23/20",
+    "gdn/20",
+    "gdn/22",
+    "gdn/24",
+    "gdn/9",
+    "mlp/18",
+    "mlp/24"
+   ],
+   "jaccard": 0.20689655172413793,
+   "chance_jaccard": 0.10057604798096603,
+   "ratio_vs_chance": 2.0571155446801113,
+   "p_value": 0.004,
+   "meets_3x_prediction": false
+  },
+  {
+   "a": "tense",
+   "b": "pos",
+   "common_pool_max_layer": 28,
+   "pool_size": 219,
+   "n_a": 45,
+   "n_b": 39,
+   "shared": [
+    "attn/11/0",
+    "attn/11/1",
+    "attn/11/4",
+    "attn/15/13",
+    "attn/23/2",
+    "attn/27/14",
+    "attn/27/2",
+    "attn/27/4",
+    "attn/3/9",
+    "gdn/21",
+    "gdn/22",
+    "gdn/24",
+    "gdn/9"
+   ],
+   "jaccard": 0.18309859154929578,
+   "chance_jaccard": 0.10611192064022336,
+   "ratio_vs_chance": 1.725523300724136,
+   "p_value": 0.024,
+   "meets_3x_prediction": false
+  }
+ ],
+ "shared_by_all_three": [
+  "attn/11/0",
+  "attn/11/1",
+  "attn/15/13",
+  "gdn/22",
+  "gdn/24",
+  "gdn/9"
+ ]
+}

@@ -1,0 +1,426 @@
+{
+ "language": {
+  "l_star": 24,
+  "BA_gap_mean": 0.22321068470676741,
+  "mass_block_level": {
+   "attn_at_stimulus": 0.08664684950371845,
+   "attn_at_question": 0.017747100121382742,
+   "gdn_at_stimulus": 0.3126716036884597,
+   "gdn_at_question": 0.14265291839565833,
+   "mlp_at_stimulus": 0.2538008914733019,
+   "mlp_at_question": 0.18648063681747895
+  },
+  "mass_per_head_E2": {
+   "attn_at_stimulus": 0.22443506088108353,
+   "attn_at_question": 0.09534768663380129,
+   "gdn_at_stimulus": 0.23747563909606184,
+   "gdn_at_question": 0.10834560147227616,
+   "mlp_at_stimulus": 0.19276304018265145,
+   "mlp_at_question": 0.14163297173412595
+  },
+  "blocks": [
+   {
+    "block": "gdn/20",
+    "kind": "gdn",
+    "layer": 20,
+    "true_delta_m": -0.11582935253779092,
+    "frac_of_gap": -0.5189238709157508,
+    "attribution": -0.10237165245537956
+   },
+   {
+    "block": "gdn/24",
+    "kind": "gdn",
+    "layer": 24,
+    "true_delta_m": -0.08015370418628054,
+    "frac_of_gap": -0.3590943878496619,
+    "attribution": -0.08566621320011715
+   },
+   {
+    "block": "gdn/9",
+    "kind": "gdn",
+    "layer": 9,
+    "true_delta_m": -0.07331333806117368,
+    "frac_of_gap": -0.3284490532229031,
+    "attribution": -0.06543915279520054
+   },
+   {
+    "block": "mlp/24",
+    "kind": "mlp",
+    "layer": 24,
+    "true_delta_m": -0.07201531728108734,
+    "frac_of_gap": -0.3226338263138886,
+    "attribution": -0.0722569033348312
+   },
+   {
+    "block": "attn/15",
+    "kind": "attn",
+    "layer": 15,
+    "true_delta_m": -0.06508062432209649,
+    "frac_of_gap": -0.2915659006538738,
+    "attribution": -0.06844733021825958
+   },
+   {
+    "block": "mlp/17",
+    "kind": "mlp",
+    "layer": 17,
+    "true_delta_m": -0.0607602939009666,
+    "frac_of_gap": -0.27221050811607694,
+    "attribution": -0.07117173944910367
+   },
+   {
+    "block": "mlp/10",
+    "kind": "mlp",
+    "layer": 10,
+    "true_delta_m": -0.0575672204295794,
+    "frac_of_gap": -0.25790530818542867,
+    "attribution": -0.01015756653311352
+   },
+   {
+    "block": "gdn/21",
+    "kind": "gdn",
+    "layer": 21,
+    "true_delta_m": -0.05160022030274081,
+    "frac_of_gap": -0.2311727163532883,
+    "attribution": -0.015838972106575967
+   },
+   {
+    "block": "gdn/14",
+    "kind": "gdn",
+    "layer": 14,
+    "true_delta_m": -0.04667091568311066,
+    "frac_of_gap": -0.20908907539270527,
+    "attribution": -0.06629385643949111
+   },
+   {
+    "block": "gdn/22",
+    "kind": "gdn",
+    "layer": 22,
+    "true_delta_m": -0.04498633295297627,
+    "frac_of_gap": -0.20154202300877738,
+    "attribution": -0.033249541806677975
+   },
+   {
+    "block": "attn/11",
+    "kind": "attn",
+    "layer": 11,
+    "true_delta_m": -0.04414568642775207,
+    "frac_of_gap": -0.19777586581819057,
+    "attribution": -0.04738881544568964
+   },
+   {
+    "block": "mlp/18",
+    "kind": "mlp",
+    "layer": 18,
+    "true_delta_m": -0.04150150964657473,
+    "frac_of_gap": -0.18592976273109593,
+    "attribution": -0.026253941003233194
+   },
+   {
+    "block": "mlp/19",
+    "kind": "mlp",
+    "layer": 19,
+    "true_delta_m": -0.03608226229747147,
+    "frac_of_gap": -0.16165114293194724,
+    "attribution": -0.01961833261884749
+   },
+   {
+    "block": "mlp/13",
+    "kind": "mlp",
+    "layer": 13,
+    "true_delta_m": -0.03480930676062899,
+    "frac_of_gap": -0.1559482101242514,
+    "attribution": -0.032486451168855034
+   },
+   {
+    "block": "gdn/10",
+    "kind": "gdn",
+    "layer": 10,
+    "true_delta_m": -0.02862980067729959,
+    "frac_of_gap": -0.12826357624820087,
+    "attribution": -0.01424705795943737
+   },
+   {
+    "block": "mlp/8",
+    "kind": "mlp",
+    "layer": 8,
+    "true_delta_m": -0.0225206822156907,
+    "frac_of_gap": -0.10089428400471148,
+    "attribution": -0.015870076433445016
+   },
+   {
+    "block": "mlp/21",
+    "kind": "mlp",
+    "layer": 21,
+    "true_delta_m": -0.022012329598267932,
+    "frac_of_gap": -0.09861682753755986,
+    "attribution": -0.00684534808776031
+   },
+   {
+    "block": "gdn/17",
+    "kind": "gdn",
+    "layer": 17,
+    "true_delta_m": -0.020791402955850025,
+    "frac_of_gap": -0.09314698793726545,
+    "attribution": -0.013520795401806633
+   },
+   {
+    "block": "gdn/8",
+    "kind": "gdn",
+    "layer": 8,
+    "true_delta_m": -0.019791999459266574,
+    "frac_of_gap": -0.08866958804085649,
+    "attribution": -0.02427904782816768
+   },
+   {
+    "block": "mlp/16",
+    "kind": "mlp",
+    "layer": 16,
+    "true_delta_m": -0.019374893109003644,
+    "frac_of_gap": -0.08680092144538915,
+    "attribution": -0.04181672216703494
+   },
+   {
+    "block": "mlp/11",
+    "kind": "mlp",
+    "layer": 11,
+    "true_delta_m": -0.01910138328870148,
+    "frac_of_gap": -0.08557557768256044,
+    "attribution": -0.008328111198109885
+   },
+   {
+    "block": "gdn/6",
+    "kind": "gdn",
+    "layer": 6,
+    "true_delta_m": -0.01323758463064828,
+    "frac_of_gap": -0.05930533588944695,
+    "attribution": -0.00626632715575397
+   },
+   {
+    "block": "mlp/9",
+    "kind": "mlp",
+    "layer": 9,
+    "true_delta_m": -0.01308431724707293,
+    "frac_of_gap": -0.058618686933655705,
+    "attribution": -0.021213947042512397
+   },
+   {
+    "block": "gdn/2",
+    "kind": "gdn",
+    "layer": 2,
+    "true_delta_m": -0.01200259377559032,
+    "frac_of_gap": -0.053772487600036556,
+    "attribution": -0.01734376000240445
+   },
+   {
+    "block": "gdn/0",
+    "kind": "gdn",
+    "layer": 0,
+    "true_delta_m": -0.010660528639952371,
+    "frac_of_gap": -0.047759938794852685,
+    "attribution": -0.01827701771010955
+   },
+   {
+    "block": "mlp/12",
+    "kind": "mlp",
+    "layer": 12,
+    "true_delta_m": -0.007857766747474626,
+    "frac_of_gap": -0.03520336294742073,
+    "attribution": -0.01806420444821318
+   },
+   {
+    "block": "mlp/2",
+    "kind": "mlp",
+    "layer": 2,
+    "true_delta_m": -0.005404374996821115,
+    "frac_of_gap": -0.024211990586027993,
+    "attribution": -0.012878829302887121
+   },
+   {
+    "block": "mlp/23",
+    "kind": "mlp",
+    "layer": 23,
+    "true_delta_m": -0.004498981932798962,
+    "frac_of_gap": -0.020155764222081433,
+    "attribution": -0.0007273022240648667
+   },
+   {
+    "block": "attn/19",
+    "kind": "attn",
+    "layer": 19,
+    "true_delta_m": -0.004398426910241504,
+    "frac_of_gap": -0.019705270453427137,
+    "attribution": 0.03662618288569017
+   },
+   {
+    "block": "mlp/5",
+    "kind": "mlp",
+    "layer": 5,
+    "true_delta_m": -0.0035520195960998535,
+    "frac_of_gap": -0.015913304512130112,
+    "attribution": -0.001631215843372047
+   },
+   {
+    "block": "mlp/0",
+    "kind": "mlp",
+    "layer": 0,
+    "true_delta_m": -0.0022232393423715635,
+    "frac_of_gap": -0.009960272938064054,
+    "attribution": -0.006054193285914759
+   },
+   {
+    "block": "attn/23",
+    "kind": "attn",
+    "layer": 23,
+    "true_delta_m": -0.001795965433120772,
+    "frac_of_gap": -0.00804605494347252,
+    "attribution": 0.0012794853964199619
+   },
+   {
+    "block": "mlp/1",
+    "kind": "mlp",
+    "layer": 1,
+    "true_delta_m": -0.0006172532836596911,
+    "frac_of_gap": -0.0027653393226698747,
+    "attribution": -0.00852345700065295
+   },
+   {
+    "block": "mlp/4",
+    "kind": "mlp",
+    "layer": 4,
+    "true_delta_m": -0.0004468311866123731,
+    "frac_of_gap": -0.0020018360106702627,
+    "attribution": -0.0018615560450901587
+   },
+   {
+    "block": "mlp/6",
+    "kind": "mlp",
+    "layer": 6,
+    "true_delta_m": 0.0020909905433654785,
+    "frac_of_gap": 0.009367788760257689,
+    "attribution": 0.005970342581470807
+   },
+   {
+    "block": "gdn/1",
+    "kind": "gdn",
+    "layer": 1,
+    "true_delta_m": 0.003119788567225168,
+    "frac_of_gap": 0.013976878263348567,
+    "attribution": -0.01036219671368599
+   },
+   {
+    "block": "gdn/5",
+    "kind": "gdn",
+    "layer": 5,
+    "true_delta_m": 0.008670183519522423,
+    "frac_of_gap": 0.03884304880347673,
+    "attribution": 0.0057301412802189585
+   },
+   {
+    "block": "mlp/15",
+    "kind": "mlp",
+    "layer": 15,
+    "true_delta_m": 0.009429237743218799,
+    "frac_of_gap": 0.0422436665861494,
+    "attribution": 0.01789676658033083
+   },
+   {
+    "block": "gdn/18",
+    "kind": "gdn",
+    "layer": 18,
+    "true_delta_m": 0.009743027637402202,
+    "frac_of_gap": 0.043649467991201445,
+    "attribution": 0.01997816823422909
+   },
+   {
+    "block": "attn/7",
+    "kind": "attn",
+    "layer": 7,
+    "true_delta_m": 0.011425591508547495,
+    "frac_of_gap": 0.05118747574094551,
+    "attribution": 0.01062551465438446
+   },
+   {
+    "block": "mlp/14",
+    "kind": "mlp",
+    "layer": 14,
+    "true_delta_m": 0.011587241788705294,
+    "frac_of_gap": 0.05191168067929853,
+    "attribution": 0.00532874515435348
+   },
+   {
+    "block": "gdn/16",
+    "kind": "gdn",
+    "layer": 16,
+    "true_delta_m": 0.01312822997570029,
+    "frac_of_gap": 0.05881541913169115,
+    "attribution": -0.04318651935706536
+   },
+   {
+    "block": "gdn/12",
+    "kind": "gdn",
+    "layer": 12,
+    "true_delta_m": 0.013449113567670201,
+    "frac_of_gap": 0.06025300081552254,
+    "attribution": 0.016081729562332232
+   },
+   {
+    "block": "attn/3",
+    "kind": "attn",
+    "layer": 3,
+    "true_delta_m": 0.014252499242623617,
+    "frac_of_gap": 0.06385222670387473,
+    "attribution": 0.0097290221300985
+   },
+   {
+    "block": "gdn/4",
+    "kind": "gdn",
+    "layer": 4,
+    "true_delta_m": 0.015927477180957883,
+    "frac_of_gap": 0.07135624892635342,
+    "attribution": 0.017490025780474146
+   },
+   {
+    "block": "mlp/22",
+    "kind": "mlp",
+    "layer": 22,
+    "true_delta_m": 0.01628757665554681,
+    "frac_of_gap": 0.07296952059863913,
+    "attribution": 0.02822614541898171
+   },
+   {
+    "block": "mlp/7",
+    "kind": "mlp",
+    "layer": 7,
+    "true_delta_m": 0.01894094645977029,
+    "frac_of_gap": 0.08485680909340461,
+    "attribution": 0.008796681455957392
+   },
+   {
+    "block": "mlp/3",
+    "kind": "mlp",
+    "layer": 3,
+    "true_delta_m": 0.023137156168619777,
+    "frac_of_gap": 0.1036561318693822,
+    "attribution": 0.011432237387634814
+   },
+   {
+    "block": "mlp/20",
+    "kind": "mlp",
+    "layer": 20,
+    "true_delta_m": 0.029842011630535126,
+    "frac_of_gap": 0.13369436893103334,
+    "attribution": 0.05654204773406188
+   },
+   {
+    "block": "gdn/13",
+    "kind": "gdn",
+    "layer": 13,
+    "true_delta_m": 0.05704786007603024,
+    "frac_of_gap": 0.2555785362648486,
+    "attribution": 0.05261746005465587
+   }
+  ],
+  "attn_blocks_in_top10": 1,
+  "hybrid_claim_survives": true
+ }
+}

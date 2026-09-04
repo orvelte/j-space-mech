@@ -1,0 +1,1872 @@
+{
+ "variant": "27b",
+ "lens": {
+  "n_prompts": 1000,
+  "d_model": 5120,
+  "n_source_layers": 63,
+  "source_layers": [
+   0,
+   62
+  ]
+ },
+ "arch": {
+  "n_layers": 64,
+  "n_heads": 24,
+  "head_dim": 256,
+  "full_attn_layers": [
+   3,
+   7,
+   11,
+   15,
+   19,
+   23,
+   27,
+   31,
+   35,
+   39,
+   43,
+   47,
+   51,
+   55,
+   59,
+   63
+  ],
+  "n_gdn": 48
+ },
+ "E0.0": {
+  "metric": 9.299427032470703,
+  "grad_norm_at_layer0": 12.625,
+  "grad_finite": true,
+  "gdn_layers_traversed": 24,
+  "pass": true
+ },
+ "E0.1a": {
+  "boot_pos": {
+   "position": -2,
+   "targets": [
+    "italy",
+    "italia",
+    "\u610f\u5927\u5229"
+   ],
+   "jlens_first_layer": 23,
+   "logit_lens_first_layer": 39,
+   "jlens_precedes_logit_lens": true,
+   "jlens_top5": {
+    "0": [
+     "ting",
+     "ing",
+     "i",
+     "er",
+     " \u2013"
+    ],
+    "1": [
+     "ting",
+     "ing",
+     "er",
+     " \u2013",
+     "i"
+    ],
+    "2": [
+     " \u2013",
+     "ting",
+     "ing",
+     "er",
+     "\u2013"
+    ],
+    "3": [
+     " --",
+     " '--",
+     " `_",
+     " <--",
+     "ting"
+    ],
+    "4": [
+     "ing",
+     "er",
+     " ***",
+     "ting",
+     " <--"
+    ],
+    "5": [
+     "ing",
+     "er",
+     "\u7684",
+     " ***",
+     "ting"
+    ],
+    "6": [
+     "\u7684",
+     "ting",
+     " `_",
+     " `",
+     "ing"
+    ],
+    "7": [
+     "ting",
+     "ing",
+     "er",
+     " `_",
+     "\u7684"
+    ],
+    "8": [
+     "ing",
+     "ting",
+     "er",
+     "tee",
+     "`.`"
+    ],
+    "9": [
+     "er",
+     "ing",
+     "--",
+     "ting",
+     "a"
+    ],
+    "10": [
+     "er",
+     "ing",
+     "a",
+     "ting",
+     "i"
+    ],
+    "11": [
+     "er",
+     "ing",
+     "ting",
+     "tee",
+     " _."
+    ],
+    "12": [
+     "er",
+     "ing",
+     "ting",
+     "a",
+     "i"
+    ],
+    "13": [
+     "er",
+     "ing",
+     "ting",
+     "i",
+     "a"
+    ],
+    "14": [
+     "er",
+     "a",
+     "i",
+     "--",
+     "ing"
+    ],
+    "15": [
+     "er",
+     "a",
+     "i",
+     "--",
+     "ing"
+    ],
+    "16": [
+     "er",
+     "a",
+     "i",
+     "ing",
+     "--"
+    ],
+    "17": [
+     "er",
+     "ing",
+     "ting",
+     "i",
+     "a"
+    ],
+    "18": [
+     "er",
+     " boots",
+     " --",
+     " boot",
+     "ting"
+    ],
+    "19": [
+     "er",
+     " --",
+     "ting",
+     "ing",
+     " `"
+    ],
+    "20": [
+     " --",
+     "er",
+     " `",
+     "a",
+     "--"
+    ],
+    "21": [
+     " --",
+     " `",
+     " ``",
+     "--",
+     " `,"
+    ],
+    "22": [
+     " --",
+     " ``",
+     " `",
+     "--",
+     " _"
+    ],
+    "23": [
+     " Italy",
+     " Italian",
+     " --",
+     "\u610f\u5927\u5229",
+     " `"
+    ],
+    "24": [
+     " Italian",
+     " Italy",
+     "\u610f\u5927\u5229",
+     "Italy",
+     " Italia"
+    ],
+    "25": [
+     " Italy",
+     " Italian",
+     "\u610f\u5927\u5229",
+     "Italy",
+     " Italians"
+    ],
+    "26": [
+     "\u610f\u5927\u5229",
+     " Italy",
+     " Italian",
+     "Italy",
+     " Italians"
+    ],
+    "27": [
+     " Italy",
+     " Italian",
+     "\u610f\u5927\u5229",
+     "Italy",
+     " Italians"
+    ],
+    "28": [
+     "\u610f\u5927\u5229",
+     " Italy",
+     "Italy",
+     " Italian",
+     " __"
+    ],
+    "29": [
+     " __",
+     "\u610f\u5927\u5229",
+     " Italy",
+     " ____",
+     "____"
+    ],
+    "30": [
+     "\u610f\u5927\u5229",
+     " __",
+     " ____",
+     "Italy",
+     " Italy"
+    ],
+    "31": [
+     "\u610f\u5927\u5229",
+     "____",
+     " ____",
+     " __",
+     " ______"
+    ],
+    "32": [
+     "____",
+     " ____",
+     " ______",
+     "\u610f\u5927\u5229",
+     " ___"
+    ],
+    "33": [
+     "\u610f\u5927\u5229",
+     "____",
+     " ____",
+     "Italy",
+     " ______"
+    ],
+    "34": [
+     "\u610f\u5927\u5229",
+     "Italy",
+     " Italy",
+     "____",
+     " ____"
+    ],
+    "35": [
+     "\u610f\u5927\u5229",
+     " Italy",
+     "Italy",
+     " Italian",
+     "____"
+    ],
+    "36": [
+     "\u610f\u5927\u5229",
+     " Italy",
+     "Italy",
+     " Italian",
+     "Italian"
+    ],
+    "37": [
+     "\u610f\u5927\u5229",
+     " Italy",
+     "Italy",
+     " Italian",
+     "Italian"
+    ],
+    "38": [
+     "\u610f\u5927\u5229",
+     " Italy",
+     "Italy",
+     " Italian",
+     "Italian"
+    ],
+    "39": [
+     "\u610f\u5927\u5229",
+     " Italy",
+     "Italy",
+     " Italian",
+     "Italian"
+    ],
+    "40": [
+     " Italy",
+     "Italy",
+     "\u610f\u5927\u5229",
+     " Italian",
+     "Italian"
+    ],
+    "41": [
+     " Italy",
+     "\u610f\u5927\u5229",
+     "Italy",
+     " Italian",
+     "Italian"
+    ],
+    "42": [
+     " Italy",
+     "Italy",
+     "\u610f\u5927\u5229",
+     " Italian",
+     "Italian"
+    ],
+    "43": [
+     " Italy",
+     "\u610f\u5927\u5229",
+     "Italy",
+     " Italian",
+     "Italian"
+    ],
+    "44": [
+     " Italy",
+     "Italy",
+     "\u610f\u5927\u5229",
+     " Italian",
+     "Italian"
+    ],
+    "45": [
+     " Italy",
+     "Italy",
+     "\u610f\u5927\u5229",
+     " Italian",
+     "Italian"
+    ],
+    "46": [
+     " Italy",
+     "Italy",
+     "\u610f\u5927\u5229",
+     " Italian",
+     "Italian"
+    ],
+    "47": [
+     " Italy",
+     " Italian",
+     "Italy",
+     "\u610f\u5927\u5229",
+     "Italian"
+    ],
+    "48": [
+     " Italy",
+     " Italian",
+     "Italy",
+     "\u610f\u5927\u5229",
+     "Italian"
+    ],
+    "49": [
+     " Italy",
+     " Italian",
+     "Italy",
+     "\u610f\u5927\u5229",
+     "____"
+    ],
+    "50": [
+     " Italy",
+     " is",
+     " Italian",
+     " was",
+     "Italy"
+    ],
+    "51": [
+     " Italy",
+     " is",
+     " Italian",
+     " was",
+     "Italy"
+    ],
+    "52": [
+     " is",
+     " Italy",
+     " was",
+     " Italian",
+     "Italy"
+    ],
+    "53": [
+     " Italy",
+     " is",
+     " Italian",
+     " was",
+     "Italy"
+    ],
+    "54": [
+     " is",
+     " Italy",
+     "-shaped",
+     " was",
+     " shaped"
+    ],
+    "55": [
+     " is",
+     " Italy",
+     "-shaped",
+     " was",
+     " shaped"
+    ],
+    "56": [
+     " Italy",
+     " is",
+     "Italy",
+     " Italian",
+     "-shaped"
+    ],
+    "57": [
+     " is",
+     " Italy",
+     " shaped",
+     "Italy",
+     "-shaped"
+    ],
+    "58": [
+     " boot",
+     " Boot",
+     "boot",
+     "Boot",
+     " is"
+    ],
+    "59": [
+     " Italy",
+     " is",
+     " boot",
+     " Italian",
+     "Italy"
+    ],
+    "60": [
+     " is",
+     " Italy",
+     " boot",
+     " Italian",
+     "Italy"
+    ],
+    "61": [
+     " is",
+     " Italy",
+     " boot",
+     "boot",
+     "Italy"
+    ],
+    "62": [
+     " is",
+     ",",
+     ".",
+     " boot",
+     "boot"
+    ]
+   },
+   "logit_lens_top5": {
+    "0": [
+     " ",
+     "\n",
+     "-",
+     ".",
+     "/"
+    ],
+    "1": [
+     " ",
+     "\n",
+     "-",
+     "/",
+     "."
+    ],
+    "2": [
+     "\n",
+     " ",
+     "'",
+     " (",
+     "/"
+    ],
+    "3": [
+     " ",
+     "\n",
+     ".",
+     " (",
+     "'"
+    ],
+    "4": [
+     " ",
+     "\n",
+     " (",
+     ".",
+     "'"
+    ],
+    "5": [
+     " ",
+     "\n",
+     "'",
+     "-",
+     "."
+    ],
+    "6": [
+     "\n",
+     " ",
+     "'",
+     " boot",
+     " ."
+    ],
+    "7": [
+     "\n",
+     " boot",
+     "boot",
+     "'",
+     "Tr"
+    ],
+    "8": [
+     " boot",
+     "boot",
+     "\n",
+     "\u9774",
+     "\u8e29"
+    ],
+    "9": [
+     " boot",
+     "\n",
+     "\u8e29",
+     "boot",
+     "\u9774"
+    ],
+    "10": [
+     " boot",
+     "boot",
+     "\u5f62",
+     "\n",
+     " c"
+    ],
+    "11": [
+     "\n",
+     "\u5f62",
+     " boot",
+     " H",
+     " w"
+    ],
+    "12": [
+     "\n",
+     "\u5f62",
+     " boot",
+     "...",
+     " b"
+    ],
+    "13": [
+     "\u5f62",
+     "ly",
+     " boot",
+     "\n",
+     "ily"
+    ],
+    "14": [
+     " boot",
+     "\u5f62",
+     "ly",
+     "\u2026",
+     "'"
+    ],
+    "15": [
+     "\u5f62",
+     " boot",
+     "\n",
+     "...",
+     "\u2026"
+    ],
+    "16": [
+     "\u5f62",
+     " boot",
+     "\u5e95",
+     "\u2026",
+     "\ufffd"
+    ],
+    "17": [
+     "\u5f62",
+     " boot",
+     "\ufffd",
+     "boot",
+     "ily"
+    ],
+    "18": [
+     " boot",
+     " foot",
+     "foot",
+     "\u4e00\u811a",
+     " boots"
+    ],
+    "19": [
+     "\u4e00\u811a",
+     "\u5c65",
+     "\ufffd",
+     " boot",
+     "foot"
+    ],
+    "20": [
+     "\ufffd",
+     "obo",
+     "iril",
+     "-shaped",
+     "ily"
+    ],
+    "21": [
+     "Tro",
+     "iful",
+     "\u90e8\u7ea7",
+     "\ufffd",
+     "uves"
+    ],
+    "22": [
+     "-shaped",
+     "\u5f62\u72b6",
+     " shape",
+     "\u5f62\u72b6\u7684",
+     "shape"
+    ],
+    "23": [
+     "-shaped",
+     "hini",
+     "\u5f62\u72b6",
+     "imson",
+     "unittest"
+    ],
+    "24": [
+     "-shaped",
+     "\u5f62\u72b6",
+     "_else",
+     "unittest",
+     "iful"
+    ],
+    "25": [
+     "-shaped",
+     "\u5f62\u72b6",
+     "iful",
+     " shape",
+     " shaped"
+    ],
+    "26": [
+     "-shaped",
+     "\u5f62\u72b6",
+     "uet",
+     "\u72b6\u7684",
+     "aldo"
+    ],
+    "27": [
+     "-shaped",
+     "append",
+     "OLA",
+     "\u5f62\u72b6",
+     "iful"
+    ],
+    "28": [
+     "append",
+     "alak",
+     "-shaped",
+     "aldo",
+     " Append"
+    ],
+    "29": [
+     "maxlength",
+     "apa",
+     "alak",
+     "\u5360\u5168\u56fd",
+     "append"
+    ],
+    "30": [
+     "maxlength",
+     "alak",
+     "\u8457\u79f0",
+     "\ufffd",
+     "apa"
+    ],
+    "31": [
+     "alak",
+     "apa",
+     "\ufffd",
+     "ola",
+     "maxlength"
+    ],
+    "32": [
+     "ola",
+     "apa",
+     "ipel",
+     "oot",
+     "\u5f62"
+    ],
+    "33": [
+     "ipel",
+     "apa",
+     "ola",
+     "olini",
+     "\ufffd"
+    ],
+    "34": [
+     "ola",
+     "-shaped",
+     "ipel",
+     "\u5730\u4e2d\u6d77",
+     "\ufffd"
+    ],
+    "35": [
+     "-shaped",
+     "ipel",
+     "iful",
+     "\u5f62\u614b",
+     "maxlength"
+    ],
+    "36": [
+     "ipel",
+     "iful",
+     "-shaped",
+     "maxlength",
+     " \u043e\u043b\u0438\u0432"
+    ],
+    "37": [
+     "apes",
+     "iful",
+     "-shaped",
+     "apest",
+     "ipel"
+    ],
+    "38": [
+     "-shaped",
+     "ola",
+     "iful",
+     "OLA",
+     "apes"
+    ],
+    "39": [
+     "ignan",
+     "-shaped",
+     "\u610f\u5927\u5229",
+     "Italy",
+     "asso"
+    ],
+    "40": [
+     "-shaped",
+     " peninsula",
+     "\u610f\u5927\u5229",
+     "icular",
+     "Italy"
+    ],
+    "41": [
+     "-shaped",
+     "icular",
+     "rak",
+     " \ubaa8\uc591",
+     "\u5f62\u72b6"
+    ],
+    "42": [
+     "-shaped",
+     "\u5f62\u72b6",
+     "icular",
+     " shape",
+     "\u5f62"
+    ],
+    "43": [
+     "-shaped",
+     "icular",
+     "\u5f62\u72b6",
+     "\u72b6\u7684",
+     "\u72b6"
+    ],
+    "44": [
+     "-shaped",
+     "icular",
+     "\u5f62\u72b6",
+     " shape",
+     "iful"
+    ],
+    "45": [
+     "-shaped",
+     "\u5f62\u72b6",
+     "icular",
+     " shape",
+     "osition"
+    ],
+    "46": [
+     "-shaped",
+     "icular",
+     "elta",
+     "\u5f62\u72b6",
+     "ellino"
+    ],
+    "47": [
+     "-shaped",
+     "icular",
+     "\u5f62\u72b6",
+     "ree",
+     " shape"
+    ],
+    "48": [
+     "-shaped",
+     "icular",
+     "\u5f62\u72b6",
+     " shape",
+     "\u5f62"
+    ],
+    "49": [
+     "-shaped",
+     "icular",
+     "\u5f62\u72b6",
+     " shape",
+     "ola"
+    ],
+    "50": [
+     "-shaped",
+     "\u5f62\u72b6",
+     "icular",
+     " shape",
+     "\u5f62"
+    ],
+    "51": [
+     "-shaped",
+     "\u5f62\u72b6",
+     " shape",
+     "icular",
+     "iful"
+    ],
+    "52": [
+     "-shaped",
+     "\u5f62\u72b6",
+     "iful",
+     " shape",
+     " peninsula"
+    ],
+    "53": [
+     "-shaped",
+     "iful",
+     "\u5f62\u72b6",
+     " shape",
+     " peninsula"
+    ],
+    "54": [
+     "-shaped",
+     " shape",
+     "\u5f62\u72b6",
+     "shape",
+     " shaped"
+    ],
+    "55": [
+     "-shaped",
+     " shape",
+     "\u5f62\u72b6",
+     " is",
+     " shaped"
+    ],
+    "56": [
+     "-shaped",
+     " shape",
+     "\u5f62\u72b6",
+     " shaped",
+     " is"
+    ],
+    "57": [
+     " shape",
+     "-shaped",
+     "\u5f62\u72b6",
+     " is",
+     " shaped"
+    ],
+    "58": [
+     " boot",
+     "boot",
+     " shape",
+     "-shaped",
+     " shaped"
+    ],
+    "59": [
+     " boot",
+     "boot",
+     " is",
+     " shape",
+     "-shaped"
+    ],
+    "60": [
+     " is",
+     " boot",
+     " Italy",
+     "boot",
+     "-shaped"
+    ],
+    "61": [
+     " is",
+     " Italy",
+     " boot",
+     "boot",
+     "\u610f\u5927\u5229"
+    ],
+    "62": [
+     " is",
+     " boot",
+     " on",
+     " in",
+     " shape"
+    ]
+   },
+   "model_top5": [
+    " is",
+    " in",
+    " on",
+    ".",
+    "\n"
+   ]
+  },
+  "final_pos": {
+   "position": -1,
+   "targets": [
+    "euro",
+    "lira",
+    "lire"
+   ],
+   "jlens_first_layer": 54,
+   "logit_lens_first_layer": 54,
+   "jlens_precedes_logit_lens": false,
+   "jlens_top5": {
+    "0": [
+     ".",
+     ",",
+     "\u00a0",
+     ";",
+     "\u2013"
+    ],
+    "1": [
+     " \u2013",
+     " \u200b\u200b",
+     ".",
+     "\u2013",
+     "\u2013and"
+    ],
+    "2": [
+     " \u200b\u200b",
+     ".",
+     ",",
+     "\u2013",
+     " \u2013"
+    ],
+    "3": [
+     " Shemale",
+     " Blowjob",
+     "\u4e13\u680f\u6536\u5f55\u8be5\u5185\u5bb9",
+     " milfs",
+     " ;;^"
+    ],
+    "4": [
+     "\u4e13\u680f\u6536\u5f55\u8be5\u5185\u5bb9",
+     "\ub960\uc740",
+     " Blowjob",
+     " **:**",
+     " Hidal"
+    ],
+    "5": [
+     ".",
+     " \u200b\u200b",
+     ",",
+     ":",
+     " anyway"
+    ],
+    "6": [
+     " \n",
+     " anyways",
+     "\n",
+     "ronic",
+     " everytime"
+    ],
+    "7": [
+     " anyways",
+     " Busty",
+     " luckily",
+     " alot",
+     " Shemale"
+    ],
+    "8": [
+     " anyways",
+     " Busty",
+     " \n\n",
+     "ur\u00e9at",
+     " _('"
+    ],
+    "9": [
+     " whilst",
+     " Whilst",
+     "Whilst",
+     " alot",
+     " kinda"
+    ],
+    "10": [
+     " \n",
+     "\u00a0",
+     " \n\n",
+     ".",
+     "..."
+    ],
+    "11": [
+     " kinda",
+     " yummy",
+     " anyways",
+     "\u783c",
+     " alot"
+    ],
+    "12": [
+     " yummy",
+     " anyways",
+     "\u783c",
+     " whilst",
+     " kinda"
+    ],
+    "13": [
+     " amongst",
+     " whilst",
+     " yummy",
+     " anyways",
+     " kinda"
+    ],
+    "14": [
+     "\n\n",
+     " amongst",
+     " \n\n",
+     " truly",
+     " really"
+    ],
+    "15": [
+     " amongst",
+     " whilst",
+     " truly",
+     " really",
+     " though"
+    ],
+    "16": [
+     " amongst",
+     " really",
+     " truly",
+     " basically",
+     " though"
+    ],
+    "17": [
+     " anyways",
+     " yummy",
+     "\u62e5\u6709\u7740",
+     " whats",
+     " really"
+    ],
+    "18": [
+     " anyways",
+     "\u4ec0\u4e48",
+     "\u53eb\u4ec0\u4e48",
+     "\u54ea\u4e00\u4e2a",
+     " really"
+    ],
+    "19": [
+     " --",
+     "\u4ec0\u4e48",
+     "\u54ea\u4e00\u4e2a",
+     "___",
+     "__"
+    ],
+    "20": [
+     "\n\n",
+     " \n\n",
+     "<|im_end|>",
+     " \r\n\r\n",
+     " --"
+    ],
+    "21": [
+     " ___",
+     "\r\n\n",
+     " __",
+     "\u53eb\u4ec0\u4e48",
+     "\u54ea\u4e00\u4e2a"
+    ],
+    "22": [
+     " ___",
+     " __",
+     " --",
+     "___",
+     " ____"
+    ],
+    "23": [
+     " --",
+     " __",
+     " ___",
+     " ____",
+     " _"
+    ],
+    "24": [
+     " \n\n",
+     "\n\n",
+     " ___",
+     " __",
+     " \r\n\r\n"
+    ],
+    "25": [
+     " ___",
+     " __",
+     " ____",
+     " ______",
+     "___"
+    ],
+    "26": [
+     " ___",
+     " __",
+     " ______",
+     " ____",
+     " _"
+    ],
+    "27": [
+     " ___",
+     " __",
+     " ______",
+     " ____",
+     " _____"
+    ],
+    "28": [
+     " ___",
+     " ______",
+     " __",
+     " ____",
+     "____"
+    ],
+    "29": [
+     " ___",
+     " ______",
+     " __",
+     " ____",
+     "____"
+    ],
+    "30": [
+     " ___",
+     " ______",
+     " __",
+     " ____",
+     "____"
+    ],
+    "31": [
+     " ___",
+     " ______",
+     " ____",
+     "____",
+     " __"
+    ],
+    "32": [
+     " ___",
+     "____",
+     " ______",
+     " ____",
+     "___"
+    ],
+    "33": [
+     " ___",
+     "<|im_end|>",
+     " ______",
+     "____",
+     "___"
+    ],
+    "34": [
+     " ___",
+     "____",
+     " ______",
+     "<|im_end|>",
+     " ____"
+    ],
+    "35": [
+     "<|im_end|>",
+     " ______",
+     " ___",
+     "____",
+     " ____"
+    ],
+    "36": [
+     " ______",
+     "<|im_end|>",
+     "____",
+     " ___",
+     " ____"
+    ],
+    "37": [
+     "<|im_end|>",
+     " ______",
+     "____",
+     " ___",
+     " ____"
+    ],
+    "38": [
+     " ______",
+     " ___",
+     " ____",
+     " Italy",
+     "____"
+    ],
+    "39": [
+     " Italy",
+     "\u610f\u5927\u5229",
+     " Italian",
+     "Italy",
+     "Italian"
+    ],
+    "40": [
+     " Italy",
+     " Italian",
+     "\u610f\u5927\u5229",
+     "Italy",
+     "Italian"
+    ],
+    "41": [
+     " Italy",
+     " Italian",
+     "\u610f\u5927\u5229",
+     "Italy",
+     "Italian"
+    ],
+    "42": [
+     " Italy",
+     " Italian",
+     "\u610f\u5927\u5229",
+     "Italy",
+     "Italian"
+    ],
+    "43": [
+     " Italy",
+     " Italian",
+     "\u610f\u5927\u5229",
+     "Italy",
+     "Italian"
+    ],
+    "44": [
+     " Italy",
+     " Italian",
+     "Italy",
+     "\u610f\u5927\u5229",
+     "Italian"
+    ],
+    "45": [
+     " Italy",
+     " Italian",
+     "Italy",
+     "\u610f\u5927\u5229",
+     "Italian"
+    ],
+    "46": [
+     " Italy",
+     " Italian",
+     "Italy",
+     "\u610f\u5927\u5229",
+     "Italian"
+    ],
+    "47": [
+     " Italy",
+     " Italian",
+     "Italy",
+     "\u610f\u5927\u5229",
+     "Italian"
+    ],
+    "48": [
+     " Italy",
+     " Italian",
+     "Italy",
+     "\u610f\u5927\u5229",
+     "Italian"
+    ],
+    "49": [
+     " Italy",
+     " Italian",
+     "____",
+     "___",
+     "Italy"
+    ],
+    "50": [
+     " Italy",
+     " Italian",
+     "____",
+     "___",
+     "__."
+    ],
+    "51": [
+     " Italy",
+     " Italian",
+     "____",
+     "___",
+     " ______"
+    ],
+    "52": [
+     " Italian",
+     " Italy",
+     "Italian",
+     "\u610f\u5927\u5229",
+     " Italians"
+    ],
+    "53": [
+     " Italian",
+     " Italy",
+     " Currency",
+     " currency",
+     "\u610f\u5927\u5229"
+    ],
+    "54": [
+     " euro",
+     " Dollar",
+     "\u6b27\u5143",
+     " dollar",
+     " Euros"
+    ],
+    "55": [
+     " Euros",
+     " euro",
+     "\u6b27\u5143",
+     " euros",
+     " Italian"
+    ],
+    "56": [
+     " Italian",
+     " called",
+     " euro",
+     "\u6b27\u5143",
+     " Euros"
+    ],
+    "57": [
+     " euro",
+     " Euro",
+     "\u6b27\u5143",
+     " Euros",
+     " euros"
+    ],
+    "58": [
+     " euro",
+     " Euro",
+     "\u6b27\u5143",
+     " Euros",
+     " euros"
+    ],
+    "59": [
+     " Euro",
+     " euro",
+     " Euros",
+     "\u6b27\u5143",
+     "Euro"
+    ],
+    "60": [
+     " euro",
+     " Euro",
+     " Euros",
+     " euros",
+     "\u6b27\u5143"
+    ],
+    "61": [
+     " Euro",
+     " euro",
+     " Euros",
+     " called",
+     " EUR"
+    ],
+    "62": [
+     " Euro",
+     " the",
+     " euro",
+     " Euros",
+     " called"
+    ]
+   },
+   "logit_lens_top5": {
+    "0": [
+     " ",
+     "-",
+     ",",
+     ".",
+     "/"
+    ],
+    "1": [
+     " ",
+     ",",
+     ".",
+     "...",
+     "-"
+    ],
+    "2": [
+     " ",
+     "...",
+     ",",
+     ".",
+     " ("
+    ],
+    "3": [
+     " ",
+     "...",
+     ",",
+     ".",
+     " ("
+    ],
+    "4": [
+     " ",
+     ".",
+     ",",
+     "...",
+     " ("
+    ],
+    "5": [
+     " ",
+     ".",
+     ",",
+     "...",
+     " ("
+    ],
+    "6": [
+     " ",
+     ",",
+     "...",
+     "\u2026",
+     " ("
+    ],
+    "7": [
+     " ",
+     ",",
+     "...",
+     "\u2026",
+     " ("
+    ],
+    "8": [
+     " ",
+     "...",
+     "\u2026",
+     "T",
+     ","
+    ],
+    "9": [
+     "...",
+     " ",
+     "\u2026",
+     "\u00a0",
+     " ("
+    ],
+    "10": [
+     "...",
+     " ",
+     "\u00a0",
+     "\u2026",
+     " ("
+    ],
+    "11": [
+     "...",
+     " ",
+     "\u00a0",
+     " (",
+     "\u2026"
+    ],
+    "12": [
+     " ",
+     "...",
+     " (",
+     " r",
+     " R"
+    ],
+    "13": [
+     "...",
+     " ",
+     " (",
+     " B",
+     " R"
+    ],
+    "14": [
+     "...",
+     "\u2026",
+     " ",
+     " (",
+     "'"
+    ],
+    "15": [
+     "...",
+     "\u2026",
+     "R",
+     "'",
+     "g"
+    ],
+    "16": [
+     "...",
+     "R",
+     "'",
+     "\u2026",
+     " ("
+    ],
+    "17": [
+     "...",
+     "R",
+     "\u2026",
+     "'",
+     " ("
+    ],
+    "18": [
+     "...",
+     " b",
+     "\u2026",
+     "R",
+     " ("
+    ],
+    "19": [
+     "...",
+     "\u2026",
+     "R",
+     " (",
+     "nam"
+    ],
+    "20": [
+     "\u2026",
+     "...",
+     " (",
+     " countries",
+     "R"
+    ],
+    "21": [
+     " (",
+     "...",
+     "R",
+     "\u2026",
+     "\ufffd"
+    ],
+    "22": [
+     " (",
+     "...",
+     ".",
+     "\n",
+     "R"
+    ],
+    "23": [
+     " (",
+     "...",
+     "\u2014",
+     ".",
+     "\n"
+    ],
+    "24": [
+     " (",
+     "...",
+     "(",
+     "\n",
+     "\u2026"
+    ],
+    "25": [
+     "...",
+     " (",
+     "\uff08",
+     "(",
+     "."
+    ],
+    "26": [
+     "...",
+     " (",
+     "(",
+     "\uff08",
+     "."
+    ],
+    "27": [
+     " (",
+     "(",
+     "...",
+     "\uff08",
+     " M"
+    ],
+    "28": [
+     " (",
+     "(",
+     " M",
+     "\uff08",
+     "\n"
+    ],
+    "29": [
+     " (",
+     "...",
+     "(",
+     "\uff08",
+     "'"
+    ],
+    "30": [
+     " (",
+     "...",
+     "\uff08",
+     "(",
+     "\u2014"
+    ],
+    "31": [
+     " (",
+     "...",
+     "un",
+     "\u6307\u7684\u662f",
+     "\u2014"
+    ],
+    "32": [
+     " (",
+     "un",
+     "\u6307\u7684\u662f",
+     "\u2014",
+     "..."
+    ],
+    "33": [
+     "...",
+     "un",
+     " (",
+     " U",
+     "\u2026"
+    ],
+    "34": [
+     "...",
+     "\u2026",
+     "\u2014",
+     "un",
+     " ("
+    ],
+    "35": [
+     "...",
+     "\u00b3",
+     "\u6307\u7684\u662f",
+     "\u2014",
+     "\ufffd"
+    ],
+    "36": [
+     "\u6307\u7684\u662f",
+     "...",
+     " countries",
+     "\u00b3",
+     "\u2014"
+    ],
+    "37": [
+     "...",
+     " countries",
+     "\u00b3",
+     "\u6307\u7684\u662f",
+     " ("
+    ],
+    "38": [
+     "...",
+     " countries",
+     " (",
+     "\u2026",
+     " country"
+    ],
+    "39": [
+     "...",
+     " Italian",
+     " countries",
+     "\u00b3",
+     "\u610f\u5927\u5229"
+    ],
+    "40": [
+     "...",
+     " countries",
+     " country",
+     "\u8be5\u56fd",
+     "____"
+    ],
+    "41": [
+     "...",
+     " Italian",
+     "\u610f\u5927\u5229",
+     " Italy",
+     "U"
+    ],
+    "42": [
+     "...",
+     "\u2014",
+     "U",
+     "rom",
+     "\u2026"
+    ],
+    "43": [
+     "...",
+     "U",
+     "als",
+     "\u610f\u5927\u5229",
+     " Italian"
+    ],
+    "44": [
+     "...",
+     "U",
+     " Italian",
+     "\u610f\u5927\u5229",
+     "als"
+    ],
+    "45": [
+     "...",
+     "\ufffd",
+     "\u2026",
+     "U",
+     " countries"
+    ],
+    "46": [
+     "...",
+     "als",
+     "un",
+     "\u2026",
+     "\u53ef\u77e5"
+    ],
+    "47": [
+     "...",
+     "nam",
+     "als",
+     "amas",
+     "U"
+    ],
+    "48": [
+     "\u8be5\u56fd",
+     "...",
+     "als",
+     "otyp",
+     "nam"
+    ],
+    "49": [
+     "...",
+     "\u8a00",
+     "<U",
+     "auer",
+     "\u53eb\u505a"
+    ],
+    "50": [
+     "...",
+     "\u53eb\u505a",
+     " called",
+     "auer",
+     "\u2026"
+    ],
+    "51": [
+     "...",
+     " called",
+     "\u53eb\u505a",
+     "\ufffd",
+     "\u53eb\u4ec0\u4e48"
+    ],
+    "52": [
+     "\ufffd",
+     " called",
+     "\u53eb\u505a",
+     "Unit",
+     "\u610f\u5927\u5229"
+    ],
+    "53": [
+     " called",
+     " currency",
+     " currencies",
+     "\ufffd",
+     "\u8d27\u5e01"
+    ],
+    "54": [
+     " called",
+     "\u5362",
+     " Euro",
+     " currency",
+     " euros"
+    ],
+    "55": [
+     " called",
+     "\u53eb\u505a",
+     "\u53eb",
+     "called",
+     "\u5362"
+    ],
+    "56": [
+     " called",
+     "\u53eb\u505a",
+     "called",
+     "\u53eb",
+     "Called"
+    ],
+    "57": [
+     " euro",
+     " Euro",
+     " called",
+     "Euro",
+     " euros"
+    ],
+    "58": [
+     " called",
+     " euro",
+     " Euro",
+     "called",
+     "\u53eb"
+    ],
+    "59": [
+     " euro",
+     " Euro",
+     "Euro",
+     " euros",
+     " EURO"
+    ],
+    "60": [
+     " Euro",
+     " euro",
+     " called",
+     "Euro",
+     " euros"
+    ],
+    "61": [
+     " called",
+     " the",
+     " Euro",
+     " euro",
+     "called"
+    ],
+    "62": [
+     " the",
+     " called",
+     " Euro",
+     " known",
+     " euro"
+    ]
+   },
+   "model_top5": [
+    " the",
+    " Euro",
+    " euro",
+    " called",
+    " a"
+   ]
+  },
+  "pass": true
+ },
+ "E0.1b": {
+  "layer": 62,
+  "per_snippet_overlap": [
+   0.8,
+   0.6,
+   0.8,
+   0.6,
+   0.4,
+   0.6,
+   0.6,
+   0.8,
+   0.4,
+   0.6
+  ],
+  "mean_overlap": 0.62,
+  "pass_60pct": true,
+  "K0_fires_below_40pct": false
+ }
+}

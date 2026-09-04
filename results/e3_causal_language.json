@@ -1,0 +1,66 @@
+{
+ "property": "language",
+ "l_star": 24,
+ "n_stimuli": 30,
+ "BA_gap_mean": 0.2232106847067674,
+ "curve": [
+  {
+   "k": 1,
+   "mean_coord": 1.8398251121242841,
+   "frac_of_gap_closed": 0.2753047401705283
+  },
+  {
+   "k": 2,
+   "mean_coord": 1.7670380294322967,
+   "frac_of_gap_closed": 0.6819370588066301
+  },
+  {
+   "k": 3,
+   "mean_coord": 1.7184690624475478,
+   "frac_of_gap_closed": 1.0566864119794406
+  }
+ ],
+ "P_prop": [
+  "gdn/20",
+  "gdn/24",
+  "gdn/9"
+ ],
+ "size": 3,
+ "reached_70pct": true,
+ "frac_of_gap_closed": 1.0566864119794406,
+ "K4_diffuse": false,
+ "random_baselines": {
+  "matched": {
+   "per_seed": [
+    -0.3965535387415416,
+    0.8102833555396983,
+    0.2849384903533616,
+    -1.0027215656605504,
+    1.2638096949990552
+   ],
+   "mean": 0.19195128729800462,
+   "sd": 0.9101432261704075
+  },
+  "broadcast_band": {
+   "per_seed": [
+    -1.2114755050565322,
+    -0.15620360679815942,
+    0.09727226419257785,
+    0.5999746352576584,
+    0.6173835519681516
+   ],
+   "mean": -0.010609732087260747,
+   "sd": 0.7486827667023662
+  }
+ },
+ "H4": {
+  "naming_accuracy_baseline": 1.0,
+  "naming_accuracy_ablated": 1.0,
+  "ref_continuation_ppl_baseline": 162.83971933027192,
+  "ref_continuation_ppl_ablated": 162.6859384439564,
+  "still_spanish_baseline": 0.5333333333333333,
+  "still_spanish_ablated": 0.5333333333333333,
+  "behaviour_within_10pct": true,
+  "dissociation_holds": true
+ }
+}

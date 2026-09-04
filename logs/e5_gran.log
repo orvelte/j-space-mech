@@ -1,0 +1,78 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 1020.02it/s]
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 102/851 [00:00<00:00, 907.47it/s]Loading weights:  23%|██▎       | 193/851 [00:00<00:00, 768.00it/s]Loading weights:  32%|███▏      | 271/851 [00:00<00:00, 700.31it/s]Loading weights:  40%|████      | 342/851 [00:00<00:00, 690.70it/s]Loading weights:  48%|████▊     | 412/851 [00:00<00:00, 567.16it/s]Loading weights:  55%|█████▌    | 472/851 [00:00<00:00, 519.07it/s]Loading weights:  63%|██████▎   | 532/851 [00:00<00:00, 507.58it/s]Loading weights:  70%|███████   | 599/851 [00:01<00:00, 532.48it/s]Loading weights:  77%|███████▋  | 654/851 [00:01<00:00, 530.70it/s]Loading weights:  84%|████████▎ | 711/851 [00:01<00:00, 541.22it/s]Loading weights:  90%|█████████ | 767/851 [00:01<00:00, 529.62it/s]Loading weights:  98%|█████████▊| 831/851 [00:01<00:00, 514.80it/s]Loading weights: 100%|██████████| 851/851 [00:01<00:00, 574.40it/s]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 99.99it/s]
+
+=== language (l*=24) — attribution mass ===
+                       per-head (E2, unfair)  block-level (matched)
+  attn_at_stimulus                    22.4%                   8.7%
+  attn_at_question                     9.5%                   1.8%
+  gdn_at_stimulus                     23.7%                  31.3%
+  gdn_at_question                     10.8%                  14.3%
+  mlp_at_stimulus                     19.3%                  25.4%
+  mlp_at_question                     14.2%                  18.6%
+  patched gdn/0   Δm  -0.0107  (   -5% of gap)
+  patched mlp/0   Δm  -0.0022  (   -1% of gap)
+  patched gdn/1   Δm   0.0031  (    1% of gap)
+  patched mlp/1   Δm  -0.0006  (   -0% of gap)
+  patched gdn/2   Δm  -0.0120  (   -5% of gap)
+  patched mlp/2   Δm  -0.0054  (   -2% of gap)
+  patched attn/3   Δm   0.0143  (    6% of gap)
+  patched mlp/3   Δm   0.0231  (   10% of gap)
+  patched gdn/4   Δm   0.0159  (    7% of gap)
+  patched mlp/4   Δm  -0.0004  (   -0% of gap)
+  patched gdn/5   Δm   0.0087  (    4% of gap)
+  patched mlp/5   Δm  -0.0036  (   -2% of gap)
+  patched gdn/6   Δm  -0.0132  (   -6% of gap)
+  patched mlp/6   Δm   0.0021  (    1% of gap)
+  patched attn/7   Δm   0.0114  (    5% of gap)
+  patched mlp/7   Δm   0.0189  (    8% of gap)
+  patched gdn/8   Δm  -0.0198  (   -9% of gap)
+  patched mlp/8   Δm  -0.0225  (  -10% of gap)
+  patched gdn/9   Δm  -0.0733  (  -33% of gap)
+  patched mlp/9   Δm  -0.0131  (   -6% of gap)
+  patched gdn/10  Δm  -0.0286  (  -13% of gap)
+  patched mlp/10  Δm  -0.0576  (  -26% of gap)
+  patched attn/11  Δm  -0.0441  (  -20% of gap)
+  patched mlp/11  Δm  -0.0191  (   -9% of gap)
+  patched gdn/12  Δm   0.0134  (    6% of gap)
+  patched mlp/12  Δm  -0.0079  (   -4% of gap)
+  patched gdn/13  Δm   0.0570  (   26% of gap)
+  patched mlp/13  Δm  -0.0348  (  -16% of gap)
+  patched gdn/14  Δm  -0.0467  (  -21% of gap)
+  patched mlp/14  Δm   0.0116  (    5% of gap)
+  patched attn/15  Δm  -0.0651  (  -29% of gap)
+  patched mlp/15  Δm   0.0094  (    4% of gap)
+  patched gdn/16  Δm   0.0131  (    6% of gap)
+  patched mlp/16  Δm  -0.0194  (   -9% of gap)
+  patched gdn/17  Δm  -0.0208  (   -9% of gap)
+  patched mlp/17  Δm  -0.0608  (  -27% of gap)
+  patched gdn/18  Δm   0.0097  (    4% of gap)
+  patched mlp/18  Δm  -0.0415  (  -19% of gap)
+  patched attn/19  Δm  -0.0044  (   -2% of gap)
+  patched mlp/19  Δm  -0.0361  (  -16% of gap)
+  patched gdn/20  Δm  -0.1158  (  -52% of gap)
+  patched mlp/20  Δm   0.0298  (   13% of gap)
+  patched gdn/21  Δm  -0.0516  (  -23% of gap)
+  patched mlp/21  Δm  -0.0220  (  -10% of gap)
+  patched gdn/22  Δm  -0.0450  (  -20% of gap)
+  patched mlp/22  Δm   0.0163  (    7% of gap)
+  patched attn/23  Δm  -0.0018  (   -1% of gap)
+  patched mlp/23  Δm  -0.0045  (   -2% of gap)
+  patched gdn/24  Δm  -0.0802  (  -36% of gap)
+  patched mlp/24  Δm  -0.0720  (  -32% of gap)
+
+  top 10 blocks, language:
+    gdn/20     Δm  -0.1158     -52%
+    gdn/24     Δm  -0.0802     -36%
+    gdn/9      Δm  -0.0733     -33%
+    mlp/24     Δm  -0.0720     -32%
+    attn/15    Δm  -0.0651     -29%
+    mlp/17     Δm  -0.0608     -27%
+    mlp/10     Δm  -0.0576     -26%
+    gdn/21     Δm  -0.0516     -23%
+    gdn/14     Δm  -0.0467     -21%
+    gdn/22     Δm  -0.0450     -20%
+  attention blocks in the top 10: 1/10
+
+wrote results/e5_granularity.json

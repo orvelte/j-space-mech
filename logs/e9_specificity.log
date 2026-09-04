@@ -1,0 +1,53 @@
+HTTP Error 429 thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3.6-27B/resolve/main/model.safetensors
+Rate limited. Waiting 203.0s before retry [Retry 1/5].
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 1085.03it/s]
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:  19%|█▉        | 162/851 [00:00<00:00, 1412.84it/s]Loading weights:  36%|███▌      | 304/851 [00:00<00:00, 825.49it/s] Loading weights:  47%|████▋     | 399/851 [00:00<00:00, 736.93it/s]Loading weights:  56%|█████▋    | 479/851 [00:00<00:00, 707.01it/s]Loading weights:  65%|██████▍   | 553/851 [00:00<00:00, 672.80it/s]Loading weights:  73%|███████▎  | 622/851 [00:00<00:00, 659.80it/s]Loading weights:  81%|████████  | 689/851 [00:01<00:00, 585.19it/s]Loading weights:  88%|████████▊ | 749/851 [00:01<00:00, 580.60it/s]Loading weights:  95%|█████████▌| 809/851 [00:01<00:00, 584.76it/s]Loading weights: 100%|██████████| 851/851 [00:01<00:00, 664.86it/s]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 116.76it/s]
+30/30 passages aligned across all four questions
+
+unpatched Spanish coordinate at (l*=24, p*):
+  A         1.7324   (    0% of the language-vs-A gap)
+  tense     1.9116   (   80% of the language-vs-A gap)
+  pos       2.1309   (  178% of the language-vs-A gap)
+  language  1.9557   (  100% of the language-vs-A gap)
+  (B_language)-(A) gap = 0.2232
+
+capturing boundary states...
+  L0   gdn   kills:  from A    4.8% | from tense    2.1% | from pos    5.1% | identity    0.0%
+  L1   gdn   kills:  from A   -0.5% | from tense    3.3% | from pos   -2.5% | identity    0.0%
+  L2   gdn   kills:  from A    5.8% | from tense    4.7% | from pos    5.6% | identity    0.0%
+  L3   attn  kills:  from A  -11.5% | from tense   -6.1% | from pos  -13.0% | identity    0.0%
+  L4   gdn   kills:  from A   -5.5% | from tense   -7.9% | from pos   -7.0% | identity    0.0%
+  L5   gdn   kills:  from A   -5.9% | from tense   -4.4% | from pos   -2.6% | identity    0.0%
+  L6   gdn   kills:  from A    0.8% | from tense    0.4% | from pos  -14.3% | identity    0.0%
+  L7   attn  kills:  from A    3.6% | from tense   -1.1% | from pos   -1.0% | identity    0.0%
+  L8   gdn   kills:  from A   10.3% | from tense   -0.3% | from pos    2.2% | identity    0.0%
+  L9   gdn   kills:  from A   28.0% | from tense  -14.5% | from pos   -8.0% | identity    0.0%
+  L10  gdn   kills:  from A   10.0% | from tense    5.6% | from pos    7.6% | identity    0.0%
+  L11  attn  kills:  from A    2.2% | from tense   -5.5% | from pos   -0.8% | identity    0.0%
+  L12  gdn   kills:  from A    9.1% | from tense    2.5% | from pos  -10.0% | identity    0.0%
+  L13  gdn   kills:  from A   -1.2% | from tense   -5.9% | from pos    1.8% | identity    0.0%
+  L14  gdn   kills:  from A    6.9% | from tense  -20.3% | from pos  -21.0% | identity    0.0%
+  L15  attn  kills:  from A   10.4% | from tense   -1.1% | from pos   -0.8% | identity    0.0%
+  L16  gdn   kills:  from A  -13.9% | from tense   17.3% | from pos    5.8% | identity    0.0%
+  L17  gdn   kills:  from A   -1.9% | from tense    0.5% | from pos  -14.2% | identity    0.0%
+  L18  gdn   kills:  from A    9.1% | from tense    2.2% | from pos   -7.9% | identity    0.0%
+  L19  attn  kills:  from A    6.4% | from tense   28.8% | from pos   17.0% | identity    0.0%
+  L20  gdn   kills:  from A    5.8% | from tense   11.3% | from pos    6.1% | identity    0.0%
+  L21  gdn   kills:  from A    4.9% | from tense    4.1% | from pos   10.3% | identity    0.0%
+  L22  gdn   kills:  from A    4.8% | from tense    6.1% | from pos    7.1% | identity    0.0%
+  L23  attn  kills:  from A    5.1% | from tense    8.8% | from pos    6.7% | identity    0.0%
+  L24  gdn   kills:  from A   15.7% | from tense    5.3% | from pos   13.1% | identity    0.0%
+
+at the layers that carry the most (ranked by the A patch):
+  layer     from A  from tense  from pos  identity  tense/A
+  L9        28.0%      -14.5%     -8.0%      0.0%    -0.52
+  L24       15.7%        5.3%     13.1%      0.0%     0.34
+  L15       10.4%       -1.1%     -0.8%      0.0%    -0.11
+  L8        10.3%       -0.3%      2.2%      0.0%    -0.03
+  L10       10.0%        5.6%      7.6%      0.0%     0.56
+  L12        9.1%        2.5%    -10.0%      0.0%     0.27
+
+L9: from-tense / from-A = -0.52
+wrote results/e9_carrier_specificity.json

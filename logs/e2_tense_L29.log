@@ -1,0 +1,82 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 788.82it/s]
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 111/851 [00:00<00:00, 907.34it/s]Loading weights:  24%|██▎       | 202/851 [00:00<00:01, 626.43it/s]Loading weights:  32%|███▏      | 269/851 [00:00<00:01, 556.56it/s]Loading weights:  38%|███▊      | 327/851 [00:00<00:00, 533.72it/s]Loading weights:  45%|████▍     | 382/851 [00:00<00:00, 503.83it/s]Loading weights:  51%|█████     | 433/851 [00:00<00:00, 419.49it/s]Loading weights:  56%|█████▋    | 480/851 [00:00<00:00, 427.39it/s]Loading weights:  65%|██████▍   | 550/851 [00:01<00:00, 489.22it/s]Loading weights:  71%|███████   | 602/851 [00:01<00:00, 497.01it/s]Loading weights:  77%|███████▋  | 657/851 [00:01<00:00, 502.51it/s]Loading weights:  83%|████████▎ | 709/851 [00:01<00:00, 494.29it/s]Loading weights:  89%|████████▉ | 760/851 [00:01<00:00, 471.00it/s]Loading weights:  96%|█████████▌| 818/851 [00:01<00:00, 488.38it/s]Loading weights: 100%|██████████| 851/851 [00:01<00:00, 507.58it/s]
+Fetching 1 files:   0%|          | 0/1 [00:00<?, ?it/s]Fetching 1 files: 100%|██████████| 1/1 [00:00<00:00, 129.12it/s]
+tense: l*=29, 30 stimuli (0 excluded by E0.2), 221 nodes (168 heads, 23 gdn, 30 mlp)
+/root/j-space-mech/scripts/e2_attribution.py:91: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  m_clean[pi] = float(m)
+  attribution [1/30] m(B)=-0.577 m(A)=-0.471
+  attribution [2/30] m(B)=-0.229 m(A)=-0.510
+  attribution [3/30] m(B)=1.016 m(A)=0.687
+  attribution [4/30] m(B)=0.777 m(A)=1.011
+  attribution [5/30] m(B)=1.326 m(A)=0.814
+  attribution [6/30] m(B)=-0.236 m(A)=-0.049
+  attribution [7/30] m(B)=0.401 m(A)=-0.040
+  attribution [8/30] m(B)=0.571 m(A)=0.706
+  attribution [9/30] m(B)=1.689 m(A)=1.082
+  attribution [10/30] m(B)=0.527 m(A)=0.490
+  attribution [11/30] m(B)=0.851 m(A)=0.466
+  attribution [12/30] m(B)=0.804 m(A)=0.654
+  attribution [13/30] m(B)=0.572 m(A)=0.782
+  attribution [14/30] m(B)=-0.167 m(A)=-0.049
+  attribution [15/30] m(B)=0.465 m(A)=0.531
+  attribution [16/30] m(B)=0.726 m(A)=0.797
+  attribution [17/30] m(B)=1.441 m(A)=1.156
+  attribution [18/30] m(B)=2.346 m(A)=1.848
+  attribution [19/30] m(B)=0.313 m(A)=0.248
+  attribution [20/30] m(B)=2.046 m(A)=1.433
+  attribution [21/30] m(B)=1.236 m(A)=1.077
+  attribution [22/30] m(B)=0.160 m(A)=0.407
+  attribution [23/30] m(B)=0.385 m(A)=0.278
+  attribution [24/30] m(B)=0.136 m(A)=-0.110
+  attribution [25/30] m(B)=1.568 m(A)=1.578
+  attribution [26/30] m(B)=1.349 m(A)=1.214
+  attribution [27/30] m(B)=1.142 m(A)=1.196
+  attribution [28/30] m(B)=-0.132 m(A)=-0.091
+  attribution [29/30] m(B)=1.497 m(A)=1.460
+  attribution [30/30] m(B)=0.653 m(A)=0.434
+
+verifying 46 candidates by activation patching ({'attn': 30, 'mlp': 8, 'gdn': 8})
+  patching [1/30]
+  patching [2/30]
+  patching [3/30]
+  patching [4/30]
+  patching [5/30]
+  patching [6/30]
+  patching [7/30]
+  patching [8/30]
+  patching [9/30]
+  patching [10/30]
+  patching [11/30]
+  patching [12/30]
+  patching [13/30]
+  patching [14/30]
+  patching [15/30]
+  patching [16/30]
+  patching [17/30]
+  patching [18/30]
+  patching [19/30]
+  patching [20/30]
+  patching [21/30]
+  patching [22/30]
+  patching [23/30]
+  patching [24/30]
+  patching [25/30]
+  patching [26/30]
+  patching [27/30]
+  patching [28/30]
+  patching [29/30]
+  patching [30/30]
+
+attribution mass: {
+ "attn_at_stimulus": 0.1992654989248641,
+ "attn_at_question": 0.08668182060372401,
+ "gdn_at_stimulus": 0.2500350585930182,
+ "gdn_at_question": 0.06957731573523769,
+ "mlp_at_stimulus": 0.2354301291092129,
+ "mlp_at_question": 0.15901017703394282
+}
+attribution-vs-patching r = 0.908 (K3 fires below 0.4)
+verified 42/46 candidates -> results/e2_attribution_tense_L29.json
+SWEEP_DONE

@@ -1,6 +1,6 @@
 # Project Spec: What Promotes a Fact into the J-Space?
 
-**Budget:** 6–10 GPU-hours on one A100-80GB, ~10 human-hours
+**Budget:** 6–8 GPU-hours on one A100-80GB, ~10 human-hours
 **Model:** Qwen3.6-27B (the checkpoint the public pre-fitted J-lens was built on — verify hash before anything else, see E0.1)
 **One-line goal:** Causally identify the nodes (attention heads and/or MLPs) that move a task-relevant fact into the J-space when an instruction asks the model to report it, and test whether those nodes are *shared* across different facts.
 
